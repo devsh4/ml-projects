@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512053306767.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6BD790A9",
+    "lastKnownWriteTime" : 1512057264,
+    "last_content_update" : 1512057264556,
+    "path" : "~/Downloads/Projects/swc-queens-nov2017/cats.R",
+    "project_path" : "cats.R",
+    "properties" : {
+        "cursorPosition" : "55,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

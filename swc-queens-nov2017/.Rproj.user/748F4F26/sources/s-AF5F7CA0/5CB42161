@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512058504332.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5CB42161",
+    "lastKnownWriteTime" : 1512062600,
+    "last_content_update" : 1512062600866,
+    "path" : "~/Downloads/Projects/swc-queens-nov2017/ggplot.R",
+    "project_path" : "ggplot.R",
+    "properties" : {
+        "cursorPosition" : "36,20",
+        "scrollLine" : "27",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
