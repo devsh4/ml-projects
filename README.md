@@ -1,5 +1,6 @@
 # Projects
 
-1) Digit classification
-2) Static analyser for security vulnerabilities
+1) SC workshop
+2) Digit classification
+3) Static analyser for security vulnerabilities
 
