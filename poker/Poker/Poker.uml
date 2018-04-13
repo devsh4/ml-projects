@@ -1,0 +1,3560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:RTCppProperties="http://www.eclipse.org/papyrus/umlrt/cppproperties" xmlns:UMLRTStateMachines="http://www.eclipse.org/papyrus/umlrt/statemachine" xmlns:UMLRealTime="http://www.eclipse.org/papyrus/umlrt" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_MSZT0gxcEei6DK0lfblWDw" name="Poker">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MSZT0wxcEei6DK0lfblWDw" source="http://www.eclipse.org/papyrus-rt/language/1.0.0">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MSZT1AxcEei6DK0lfblWDw" key="language" value="umlrt-cpp"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Xu73EA4DEeipktqbB3N69w" source="UMLRT_Default_top">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Xu8eIA4DEeipktqbB3N69w" key="top_name" value="Top"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OXKnoAxcEei6DK0lfblWDw" name="Top" classifierBehavior="_DQGfkA38EeipktqbB3N69w" isActive="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4v688AxcEei6DK0lfblWDw" name="p1" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EZGs4A0pEeiXh6kFwUffUg" name="p2" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gDizoA0pEeiXh6kFwUffUg" name="d1" visibility="protected" type="_PtUiQAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_CvQm4A39EeipktqbB3N69w" name="log" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6kIb0IeXEeSVyrlWP4nYew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_bbOU4A3-EeipktqbB3N69w" name="input" visibility="protected" type="_cHwVoA38EeipktqbB3N69w" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yD2s8CKqEeiLy4mxOkkZFA" name="p3" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HZp_cCYlEeipDpFco6CMHg" name="p4" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_J87NcCYlEeipDpFco6CMHg" name="p5" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UNR8sDDKEeiFE-XFaysu8w" name="twoDigitRounds">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_X8vRADDKEeiFE-XFaysu8w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__ZYzwDGJEei8z5fxbyJ6nw" name="p6" visibility="protected" type="_SDZBwAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_i6lSMA0pEeiXh6kFwUffUg" name="RTConnector1">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_i6oVgA0pEeiXh6kFwUffUg" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_i6o8kA0pEeiXh6kFwUffUg" partWithPort="_4v688AxcEei6DK0lfblWDw" role="_vK904AxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_jlnMMA0pEeiXh6kFwUffUg" name="RTConnector2">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_jlpocA0pEeiXh6kFwUffUg" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_jlpocQ0pEeiXh6kFwUffUg" partWithPort="_EZGs4A0pEeiXh6kFwUffUg" role="_vK904AxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_koIJUA3-EeipktqbB3N69w" name="RTConnector3">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_koc5cA3-EeipktqbB3N69w" role="_bbOU4A3-EeipktqbB3N69w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_koc5cQ3-EeipktqbB3N69w" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_dWLlsA3-EeipktqbB3N69w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_1VI3gCKqEeiLy4mxOkkZFA" name="RTConnector4">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_1VTPkCKqEeiLy4mxOkkZFA" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_1VUdsCKqEeiLy4mxOkkZFA" partWithPort="_yD2s8CKqEeiLy4mxOkkZFA" role="_vK904AxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_ZRgKwCYlEeipDpFco6CMHg" name="RTConnector5">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZRpUsCYlEeipDpFco6CMHg" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZRpUsSYlEeipDpFco6CMHg" partWithPort="_HZp_cCYlEeipDpFco6CMHg" role="_vK904AxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_aCYOECYlEeipDpFco6CMHg" name="RTConnector6">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_aCYOESYlEeipDpFco6CMHg" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_aCYOEiYlEeipDpFco6CMHg" partWithPort="_J87NcCYlEeipDpFco6CMHg" role="_vK904AxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_O_6csDGKEei8z5fxbyJ6nw" name="RTConnector7">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_PARpEDGKEei8z5fxbyJ6nw" partWithPort="__ZYzwDGJEei8z5fxbyJ6nw" role="_vK904AxcEei6DK0lfblWDw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_PASQIDGKEei8z5fxbyJ6nw" partWithPort="_gDizoA0pEeiXh6kFwUffUg" role="_yDMmQAxcEei6DK0lfblWDw"/>
+      </ownedConnector>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_DQGfkA38EeipktqbB3N69w" name="StateMachine" isReentrant="false">
+        <region xmi:type="uml:Region" xmi:id="_DRBsoA38EeipktqbB3N69w" name="Region">
+          <transition xmi:type="uml:Transition" xmi:id="_DUvvAA38EeipktqbB3N69w" name="Initial" source="_DREv8A38EeipktqbB3N69w" target="_DUtSwA38EeipktqbB3N69w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_7cl4QA4BEeipktqbB3N69w" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>    log.log(&quot;[Top] starting&quot;);&#xD;
+    int argc = UMLRTMain::getArgCount();&#xD;
+    if (argc > 0) {&#xD;
+    const char * arg = UMLRTMain::getArg(0);&#xD;
+    log.log(&quot;[Top] command line argument is '%s'&quot;, arg);&#xD;
+    char * myArg = new char[strlen(arg)+1];&#xD;
+    strcpy(myArg, arg);&#xD;
+    if(isValid(myArg)){&#xD;
+    log.log(&quot;[Top] sending to 'inputPort'&quot;);&#xD;
+    input.inp(myArg, twoDigitRounds).send();&#xD;
+    }&#xD;
+    else{&#xD;
+    log.log(&quot;[Top] invalid command line argument&quot;);&#xD;
+    log.log(&quot;[Top] not starting!&quot;);&#xD;
+    }&#xD;
+    }&#xD;
+    else {&#xD;
+    log.log(&quot;[Top] no command line argument&quot;);&#xD;
+    log.log(&quot;[Top] sending default value to 'inputPort'&quot;);&#xD;
+    input.inp(&quot;5&quot;, twoDigitRounds).send();&#xD;
+    }&#xD;
+</body>
+            </effect>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_DREv8A38EeipktqbB3N69w"/>
+          <subvertex xmi:type="uml:State" xmi:id="_DUtSwA38EeipktqbB3N69w" name="State1"/>
+        </region>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VT7fIA4BEeipktqbB3N69w" specification="_IEmXEA4BEeipktqbB3N69w">
+        <language>C++</language>
+        <body>if (!(strlen(arg)&lt;3)) {&#xD;
+  return false;&#xD;
+}&#xD;
+else if(strlen(arg) == 2){&#xD;
+  twoDigitRounds = true;&#xD;
+  char c1 = arg[0]; &#xD;
+  char c2 = arg[1];&#xD;
+  if(c1 - '0' >= 0 &amp;&amp; c1 - '0' &lt;= 9){&#xD;
+      if(c2 - '0' >= 0 &amp;&amp; c2 - '0' &lt;= 9){&#xD;
+		return true;&#xD;
+	}&#xD;
+	else{&#xD;
+		return false;&#xD;
+	}&#xD;
+  }&#xD;
+  else{&#xD;
+    return false;&#xD;
+  }&#xD;
+}&#xD;
+else{&#xD;
+  char c1 = arg[0]; &#xD;
+  if(c1 - '0' >= 0 &amp;&amp; c1 - '0' &lt;= 9){&#xD;
+     return true;&#xD;
+  }&#xD;
+  else{&#xD;
+    return false;&#xD;
+  }&#xD;
+}&#xD;
+&#xD;
+    </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cROzAA4CEeipktqbB3N69w">
+        <language>C++</language>
+        <body>return ((c - '0' > 0 &amp;&amp; c));</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IEmXEA4BEeipktqbB3N69w" name="isValid" concurrency="guarded" method="_VT7fIA4BEeipktqbB3N69w">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hFYT8A4BEeipktqbB3N69w" name="arg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jSdPgA4BEeipktqbB3N69w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PtUiQAxcEei6DK0lfblWDw" name="Dealer" classifierBehavior="_DBJVIAxdEei6DK0lfblWDw" isActive="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_R-ctgD6HEeimEsN7A7xrjA">
+        <body>Consists of pointers declared at capsule level under 'public declarations'</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yDMmQAxcEei6DK0lfblWDw" name="playPort" visibility="public" type="_TXgVAAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_upTgEDoAEeieqeLQKWTbag" value="6"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqpj4DoAEeieqeLQKWTbag" value="6"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_0EK_gAxcEei6DK0lfblWDw" name="log" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6kIb0IeXEeSVyrlWP4nYew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_ybIuoA0sEeiF6L0MmCDtCA" name="timing" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__tsXkA0xEeiF6L0MmCDtCA" name="i" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_veMeID6JEeimEsN7A7xrjA">
+          <body>Used in 'Deal Cards' State for &quot;hands&quot; array</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="__poyAD6JEeimEsN7A7xrjA">
+          <body>Used in 'Open Flop' State for &quot;flop&quot; array</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_HKpFUD6KEeimEsN7A7xrjA">
+          <body>Used in 'Play' State for counting players</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EmeEYA0yEeiF6L0MmCDtCA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Em4UEA0yEeiF6L0MmCDtCA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jdHskA3vEeipktqbB3N69w" name="players" visibility="public">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_J0yFQDIyEeiBYMGMRx41sg">
+          <body>Variable to specify number of players&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_5VfRQDGBEei8z5fxbyJ6nw" value="6"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XIBzoA35EeipktqbB3N69w" name="k" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2u99ED6JEeimEsN7A7xrjA">
+          <body>Used as a counter in 'Deal Cards' state for &quot;used card&quot; array</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RxxuYA3-EeipktqbB3N69w" name="roundC" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_L7bosDIyEeiBYMGMRx41sg">
+          <body>Variable to specify number of rounds&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_dWLlsA3-EeipktqbB3N69w" name="input" visibility="public" type="_cHwVoA38EeipktqbB3N69w" isOrdered="true" aggregation="composite" isBehavior="true"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wo5EMA-5EeiSz5Qu9q9yoQ" name="r" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Ekyn8D6LEeimEsN7A7xrjA">
+          <body>Used in SM to compare against roundC to ensure apprpriate number of rounds are played.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PWIGMA-9EeiSz5Qu9q9yoQ" name="counter" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Lsit8CZGEeiTsem0Hypb_A" value="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8r21ACG7Eei3E_GTNZS2AQ" name="deck" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_O9MJgDIyEeiBYMGMRx41sg">
+          <body>Array to create and store the deck&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVORQCG8Eei3E_GTNZS2AQ" value="52"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CVhzQCG8Eei3E_GTNZS2AQ" value="52"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FQUaUCHFEei3E_GTNZS2AQ" name="used" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_RSfM8DIyEeiBYMGMRx41sg">
+          <body>Array to keep count of all used/dealt cards</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HI0NACHFEei3E_GTNZS2AQ" value="52"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HJGg4CHFEei3E_GTNZS2AQ" value="52"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_qeba0CI1EeiIvvUAw0J7lw" name="tickOut" visibility="public" type="_NFysUCHGEei3E_GTNZS2AQ" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_xjFwYCI1EeiIvvUAw0J7lw" name="tickIn" visibility="public" type="_NFysUCHGEei3E_GTNZS2AQ" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bt6-ICZFEeiTsem0Hypb_A" name="temp" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_rg0-wD6LEeimEsN7A7xrjA">
+          <body>Used in 'Play' state as a counter for &quot;hands&quot; array</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1EkYICr-EeiEg8_Y4fANmQ" name="hands" visibility="protected" aggregation="shared">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_VKCtUDIyEeiBYMGMRx41sg">
+          <body>Array to store hands of all players&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6kFfYCr_EeiEg8_Y4fANmQ" value="12"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6kZocCr_EeiEg8_Y4fANmQ" value="12"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LSqjQCsFEeiEg8_Y4fANmQ" name="flop" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_YxptMDIyEeiBYMGMRx41sg">
+          <body>Array to store the flop (i.e. shared/community cards)&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NNVgMCsFEeiEg8_Y4fANmQ" value="5"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NOG8QCsFEeiEg8_Y4fANmQ" value="5"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S5ZQcC-tEeirsMLhmd_FLQ" name="seven" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bl9n4DIyEeiBYMGMRx41sg">
+          <body>Array to store seven card hand of each player&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_afopEC-tEeirsMLhmd_FLQ" value="7"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_agLboC-tEeirsMLhmd_FLQ" value="7"/>
+        <qualifier xmi:type="uml:Property" xmi:id="_qc7D0C-7EeirsMLhmd_FLQ" name="hasPair">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_qc7D0S-7EeirsMLhmd_FLQ"/>
+        </qualifier>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_P13FoC-7EeirsMLhmd_FLQ" name="hasPair">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <qualifier xmi:type="uml:Property" xmi:id="_XNHAAC-7EeirsMLhmd_FLQ" name="hasPair">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_XNHAAS-7EeirsMLhmd_FLQ"/>
+        </qualifier>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_U03WQC-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_apPvsC-7EeirsMLhmd_FLQ" name="hasDubs">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_apPvsS-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_a-UAwC-7EeirsMLhmd_FLQ" name="hasTrips">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_a-UAwS-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rXDJwC-7EeirsMLhmd_FLQ" name="hasFull">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_rXDJwS-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rqId0C-7EeirsMLhmd_FLQ" name="hasStraight">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_rqId0S-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_r44EcC-7EeirsMLhmd_FLQ" name="hasFlush">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_r44EcS-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sKKBsC-7EeirsMLhmd_FLQ" name="hasQuads">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_sKKBsS-7EeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T23p4C_wEeirsMLhmd_FLQ" name="hasStraightFlush">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <qualifier xmi:type="uml:Property" xmi:id="_T23p4S_wEeirsMLhmd_FLQ" name="hasPair">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_T23p4i_wEeirsMLhmd_FLQ"/>
+        </qualifier>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_T23p4y_wEeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UMFr8C_wEeirsMLhmd_FLQ" name="hasRoyalFlush">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <qualifier xmi:type="uml:Property" xmi:id="_UMFr8S_wEeirsMLhmd_FLQ" name="hasPair">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_UMFr8i_wEeirsMLhmd_FLQ"/>
+        </qualifier>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_UMFr8y_wEeirsMLhmd_FLQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B6wNIC_xEeirsMLhmd_FLQ" name="rank" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eVkBsDIyEeiBYMGMRx41sg">
+          <body>Array to store card ranks of all players&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dwp-0C_xEeirsMLhmd_FLQ" value="6"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DxLjQC_xEeirsMLhmd_FLQ" value="6"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bjT5YDFqEei8z5fxbyJ6nw" name="highCount" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PxfJ4D6LEeimEsN7A7xrjA">
+          <body>To decide if there is a clear winner or tie in 'Check Winner' state</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oPaYkDFqEei8z5fxbyJ6nw" name="highestRank" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_jcZ_sDIyEeiBYMGMRx41sg">
+          <body>Variable to store highest rank and used in 'Tie' State to check ranks and handle tie cases accordingly.&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uerPwDIxEeiBYMGMRx41sg" name="playersInTie" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bKg3oD6LEeimEsN7A7xrjA">
+          <body>Array to store players in tie for a specific round</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uerPwTIxEeiBYMGMRx41sg" value="6"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uerPwjIxEeiBYMGMRx41sg" value="6"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k-xC8DI1EeiBYMGMRx41sg" name="tieCounter" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_dq_QUD6LEeimEsN7A7xrjA">
+          <body>Stores number of players which are in a tie</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lK2kMD0XEeiznpwlLD5SuA" name="tempArr" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4l3iYD6LEeimEsN7A7xrjA">
+          <body>Used in 'Play state' for storing arrays and determining the hand</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pC83ID0XEeiznpwlLD5SuA" value="7"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDbYQD0XEeiznpwlLD5SuA" value="7"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JkxkcD6VEeiTe92WqxYqqw" name="higherNumber" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_T9cocD6VEeiTe92WqxYqqw">
+          <body>for storing higher number ( In case of Pair, Trips, Dubs Tie case ) </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UwzYAD6VEeiTe92WqxYqqw" name="secondHighestNumber" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_aZ5HcD6VEeiTe92WqxYqqw">
+          <body>for storing second highest number ( In case of Dubs Tie case for lower pair out of the dubs) </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_ZERboCI2EeiIvvUAw0J7lw" name="RTConnector1">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZEVtECI2EeiIvvUAw0J7lw" role="_qeba0CI1EeiIvvUAw0J7lw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ZEVtESI2EeiIvvUAw0J7lw" role="_xjFwYCI1EeiIvvUAw0J7lw"/>
+      </ownedConnector>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_DBJVIAxdEei6DK0lfblWDw" name="StateMachine" isReentrant="false">
+        <region xmi:type="uml:Region" xmi:id="_DBSfEAxdEei6DK0lfblWDw" name="Region">
+          <transition xmi:type="uml:Transition" xmi:id="_DBlaAAxdEei6DK0lfblWDw" name="Initial" source="_DBcQEAxdEei6DK0lfblWDw" target="_q4E-ACJCEeiIvvUAw0J7lw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_92ZSEAxdEei6DK0lfblWDw" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>log.log(&quot;[Dealer] Starting Game!&quot;);&#xD;
+&#xD;
+//Initialize seed&#xD;
+srand(time(0));</body>
+            </effect>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_bcpFsA-1EeiSz5Qu9q9yoQ" name="" source="_q4E-ACJCEeiIvvUAw0J7lw" target="_LwafQCI-EeiIvvUAw0J7lw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_1G2xECJAEeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>//take user input&#xD;
+int r1 = toDigit(rounds[0]);&#xD;
+int r2 = 0;&#xD;
+r = 0;&#xD;
+&#xD;
+//handle two digit&#xD;
+if(twoDigitRounds == true){&#xD;
+	r2 = toDigit(rounds[1]);&#xD;
+	r1 = r1*10;&#xD;
+}&#xD;
+&#xD;
+&#xD;
+roundC = r1 + r2;&#xD;
+log.log(&quot;[Dealer] Total Rounds: %d&quot;, roundC);&#xD;
+&#xD;
+&#xD;
+</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_KhH6QCJBEeiIvvUAw0J7lw" event="_fAdoIA38EeipktqbB3N69w" port="_dWLlsA3-EeipktqbB3N69w"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_KNOwUCGxEei3E_GTNZS2AQ" kind="external" source="_DvWBYA0tEeiF6L0MmCDtCA" target="_gPIKsCI0EeiIvvUAw0J7lw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_1WdO8DDIEeiFE-XFaysu8w" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>//Increment rounds&#xD;
+r++;</body>
+            </effect>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_OExNICGyEei3E_GTNZS2AQ" name="" kind="external" source="_gPq9QCI0EeiIvvUAw0J7lw" target="_7gPsACsHEeiEg8_Y4fANmQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_S4HAUCGyEei3E_GTNZS2AQ" name="Rounds Left" guard="_WyRv0CGyEei3E_GTNZS2AQ" kind="external" source="_IB654CGyEei3E_GTNZS2AQ" target="_DvAqMA0tEeiF6L0MmCDtCA">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_WyRv0CGyEei3E_GTNZS2AQ">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_WySW4CGyEei3E_GTNZS2AQ">
+                <language>C++</language>
+                <body>return (!(r == roundC));</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_gZeTkCGyEei3E_GTNZS2AQ" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>log.log(&quot;[Dealer] ********************&quot;);&#xD;
+log.log(&quot;[Dealer] Next round starting..&quot;);&#xD;
+log.log(&quot;[Dealer] ********************&quot;);&#xD;
+&#xD;
+&#xD;
+</body>
+            </effect>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_ZOJVUCGyEei3E_GTNZS2AQ" name="Rounds played" guard="_6R7hICZZEei2oYQx_nF8JQ" kind="external" source="_IB654CGyEei3E_GTNZS2AQ" target="_XtL44CGyEei3E_GTNZS2AQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_6R7hICZZEei2oYQx_nF8JQ">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_6R8IMCZZEei2oYQx_nF8JQ">
+                <language>C++</language>
+                <body>return (r == roundC);</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_okmbAD6HEeimEsN7A7xrjA" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>log.log(&quot;[Dealer] #######################&quot;);&#xD;
+log.log(&quot;[Dealer] Game Over!&quot;);</body>
+            </effect>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_0f4aECZFEeiTsem0Hypb_A" kind="external" source="_LwkQQCI-EeiIvvUAw0J7lw" target="_DvAqMA0tEeiF6L0MmCDtCA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tKp0wCsuEeiVfpwNuTtuYw" kind="external" source="_8JRa4CsHEeiEg8_Y4fANmQ" target="_53pncC_yEeirsMLhmd_FLQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_HqkkwC_zEeirsMLhmd_FLQ" kind="external" source="_GXH_4C_zEeirsMLhmd_FLQ" target="_IB654CGyEei3E_GTNZS2AQ"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_DBcQEAxdEei6DK0lfblWDw"/>
+          <subvertex xmi:type="uml:State" xmi:id="_DBcQEgxdEei6DK0lfblWDw" name="Deal Cards">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_DvAqMA0tEeiF6L0MmCDtCA" kind="entryPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_DvWBYA0tEeiF6L0MmCDtCA" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_Duz14A0tEeiF6L0MmCDtCA" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_JBnzUA0tEeiF6L0MmCDtCA" name="" kind="local" source="_DvAqMA0tEeiF6L0MmCDtCA" target="_83Q2IB9-EeicQOsei9m8zw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_W_rDEB93EeicQOsei9m8zw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Initialize counter for no. of players &#xD;
+temp = 0;&#xD;
+&#xD;
+//Initialize counter for used deck array &#xD;
+k = 0;&#xD;
+&#xD;
+//Hands array counter&#xD;
+i = 0;&#xD;
+&#xD;
+//Initializing global array to store final hands&#xD;
+finalHands = new int[players*7];&#xD;
+&#xD;
+//Empty 'used cards' array&#xD;
+for(int x=0; x&lt;52;x++)&#xD;
+{&#xD;
+	used[x] = -1;&#xD;
+}</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_QKWwkA0tEeiF6L0MmCDtCA" name="deal1" source="_d8RIIB9_EeicQOsei9m8zw" target="_PxXo0A0tEeiF6L0MmCDtCA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Qs75MA0tEeiF6L0MmCDtCA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>int randomCard = random();&#xD;
+&#xD;
+//Call operation&#xD;
+randomCard = deal(randomCard);&#xD;
+&#xD;
+//Used array to keep count of cards already distributed&#xD;
+used[k] = randomCard;&#xD;
+k++;&#xD;
+&#xD;
+//log.log(&quot;first card sent to Player %d&quot;, deck[randomCard]);&#xD;
+&#xD;
+//Deal&#xD;
+playPort.deal(deck[randomCard], temp).sendAt(temp-1);&#xD;
+&#xD;
+log.log(&quot;[Dealer] dealing first card to Player %d&quot;, temp);</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_UU1uECKkEeiLy4mxOkkZFA" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_YY2cAA0tEeiF6L0MmCDtCA" name="" source="_PxXo0A0tEeiF6L0MmCDtCA" target="_uK0kwCHMEei3E_GTNZS2AQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_vCEP4CsOEeiEg8_Y4fANmQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Received acknowledge from player and storing player hand in 'hands' array&#xD;
+hands[i] = c;&#xD;
+&#xD;
+//Self commmunication&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_DYwfIB99EeicQOsei9m8zw" event="_mT5bcA6qEeiH45zQ4B3Bcg" port="_yDMmQAxcEei6DK0lfblWDw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_d2voEA0tEeiF6L0MmCDtCA" name="" guard="_4D11UB98EeicQOsei9m8zw" source="_TGxIwB-AEeicQOsei9m8zw" target="_DvWBYA0tEeiF6L0MmCDtCA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_4D11UB98EeicQOsei9m8zw">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_4EPd8B98EeicQOsei9m8zw">
+                    <language>C++</language>
+                    <body>return (temp > players);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_sig48A0tEeiF6L0MmCDtCA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>log.log(&quot;[Dealer] Dealt cards&quot;);&#xD;
+&#xD;
+int playerCount = 1;&#xD;
+&#xD;
+for(int i=0; i &lt; (players * 2); i=i+2)&#xD;
+{&#xD;
+	char card = defineCard(hands[i]);&#xD;
+	char suit = defineSuit(hands[i]);&#xD;
+	char card1 = defineCard(hands[i+1]);&#xD;
+	char suit1 = defineSuit(hands[i+1]);&#xD;
+	log.log(&quot;Player %d: %c %c, %c %c&quot;, playerCount, card, suit, card1, suit1);&#xD;
+	playerCount++;&#xD;
+}&#xD;
+&#xD;
+//Print used array&#xD;
+/*for(int x=0; x&lt;=52;x++)&#xD;
+{&#xD;
+	if(!(used[x] == -1))&#xD;
+		log.log(&quot;%d&quot;, used[x]);&#xD;
+}*/</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_k6gFkB9_EeicQOsei9m8zw" name="" guard="_mfUHQB9_EeicQOsei9m8zw" kind="external" source="_TGxIwB-AEeicQOsei9m8zw" target="_d8RIIB9_EeicQOsei9m8zw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_mfUHQB9_EeicQOsei9m8zw">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_mfUuUB9_EeicQOsei9m8zw">
+                    <language>C++</language>
+                    <body>return (temp &lt;= players);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_tK_mED6BEeimEsN7A7xrjA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self communication&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_bHRbgB-AEeicQOsei9m8zw" name="" kind="external" source="_83Q2IB9-EeicQOsei9m8zw" target="_TGxIwB-AEeicQOsei9m8zw">
+                <trigger xmi:type="uml:Trigger" xmi:id="_bzQfgCI4EeiIvvUAw0J7lw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_7ZMDgCHMEei3E_GTNZS2AQ" name="deal2" kind="external" source="_uK0kwCHMEei3E_GTNZS2AQ" target="_36dS0CHMEei3E_GTNZS2AQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_-LE8UCHMEei3E_GTNZS2AQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>int randomCard  = random();&#xD;
+&#xD;
+//Call operation&#xD;
+randomCard  = deal(randomCard);&#xD;
+&#xD;
+//Used deck&#xD;
+used[k] = randomCard;&#xD;
+k++;&#xD;
+&#xD;
+//Deal&#xD;
+playPort.deal(deck[randomCard], temp).sendAt(temp-1);&#xD;
+&#xD;
+log.log(&quot;[Dealer] dealing second card to Player %d&quot;, temp);</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_wSryICstEeiVfpwNuTtuYw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_N_rdgCHNEei3E_GTNZS2AQ" name="" kind="external" source="_36dS0CHMEei3E_GTNZS2AQ" target="_83Q2IB9-EeicQOsei9m8zw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_m0n04CswEeiVfpwNuTtuYw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Received acknowledge from player and storing player hand in 'hands' array&#xD;
+hands[i+1] = c;&#xD;
+&#xD;
+//Incrementing counter by 2 for 'hands' array&#xD;
+i=i+2;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_O9DrwCHNEei3E_GTNZS2AQ" event="_mT5bcA6qEeiH45zQ4B3Bcg" port="_yDMmQAxcEei6DK0lfblWDw"/>
+              </transition>
+              <subvertex xmi:type="uml:State" xmi:id="_PxXo0A0tEeiF6L0MmCDtCA" name="Deal Card 1"/>
+              <subvertex xmi:type="uml:State" xmi:id="_83Q2IB9-EeicQOsei9m8zw" name="Looping">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_B2SfcB-AEeicQOsei9m8zw" name="Entry" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self commmunication&#xD;
+tickOut.tick().send();&#xD;
+&#xD;
+//Incrementing counter for number of players to whom the cards have been dealt &#xD;
+temp++;&#xD;
+</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_d8RIIB9_EeicQOsei9m8zw" name="Dealing"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_TGxIwB-AEeicQOsei9m8zw" kind="choice"/>
+              <subvertex xmi:type="uml:State" xmi:id="_uK0kwCHMEei3E_GTNZS2AQ" name="Continue"/>
+              <subvertex xmi:type="uml:State" xmi:id="_36dS0CHMEei3E_GTNZS2AQ" name="Deal Card 2"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_TbXW4A-1EeiSz5Qu9q9yoQ" name="Deck Gen">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_LwafQCI-EeiIvvUAw0J7lw" kind="entryPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_LwkQQCI-EeiIvvUAw0J7lw" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_LwU_sCI-EeiIvvUAw0J7lw" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_PgrE0CI-EeiIvvUAw0J7lw" name="Initial" kind="local" source="_LwafQCI-EeiIvvUAw0J7lw" target="_OkE5sCI-EeiIvvUAw0J7lw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_daGSwCI-EeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>i = 0;&#xD;
+&#xD;
+</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_h_KZYCI-EeiIvvUAw0J7lw" name="Starting" kind="external" source="_OkE5sCI-EeiIvvUAw0J7lw" target="_OPCd0CI-EeiIvvUAw0J7lw">
+                <trigger xmi:type="uml:Trigger" xmi:id="_i1T-QCI-EeiIvvUAw0J7lw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_k2ADoCI-EeiIvvUAw0J7lw" name="Not All Cards Generated" guard="_uRMLsCI-EeiIvvUAw0J7lw" kind="external" source="_OPCd0CI-EeiIvvUAw0J7lw" target="_O1sOICI-EeiIvvUAw0J7lw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_uRMLsCI-EeiIvvUAw0J7lw">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_uRMywCI-EeiIvvUAw0J7lw">
+                    <language>C++</language>
+                    <body>return (i &lt;= 52);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_da3K8CJCEeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>&#xD;
+//Self communication&#xD;
+tickOut.tick().send();</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_ljDW4CI-EeiIvvUAw0J7lw" name="52 Cards Generated" guard="_MXIPkC-oEeirsMLhmd_FLQ" kind="external" source="_OPCd0CI-EeiIvvUAw0J7lw" target="_LwkQQCI-EeiIvvUAw0J7lw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_MXIPkC-oEeirsMLhmd_FLQ">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_MXI2oC-oEeirsMLhmd_FLQ">
+                    <language>C++</language>
+                    <body>return (i > 52);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_bX08MCJCEeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>log.log(&quot;[Dealer] Deck Ready&quot;);</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_BAWZgCI_EeiIvvUAw0J7lw" name="Next Card" kind="external" source="_O1sOICI-EeiIvvUAw0J7lw" target="_OkE5sCI-EeiIvvUAw0J7lw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_R757sCI_EeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Store card in deck&#xD;
+deck[i-1] = i;	</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_UBehECI_EeiIvvUAw0J7lw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_OPCd0CI-EeiIvvUAw0J7lw" kind="choice"/>
+              <subvertex xmi:type="uml:State" xmi:id="_OkE5sCI-EeiIvvUAw0J7lw" name="Initial">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_etFkoCI-EeiIvvUAw0J7lw" name="Entry" isReentrant="false">
+                  <language>C++</language>
+                  <body>i++;&#xD;
+&#xD;
+//Self communication&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_O1sOICI-EeiIvvUAw0J7lw" name="Add to Deck"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_JNsl8CGxEei3E_GTNZS2AQ" name="Open Flop">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_gPIKsCI0EeiIvvUAw0J7lw" kind="entryPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_gPq9QCI0EeiIvvUAw0J7lw" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_gNyG4CI0EeiIvvUAw0J7lw" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_kRfM4CI0EeiIvvUAw0J7lw" name="Initial" kind="local" source="_gPIKsCI0EeiIvvUAw0J7lw" target="_j01GECI0EeiIvvUAw0J7lw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_V91ZsCI3EeiIvvUAw0J7lw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>log.log(&quot;[Dealer] Time to open the flop!&quot;);&#xD;
+&#xD;
+//Counter for opening flop&#xD;
+counter = 0;&#xD;
+&#xD;
+//Counter for 'flop' array&#xD;
+i=0;&#xD;
+&#xD;
+log.log(&quot;[Dealer] Flop:&quot;);</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_QO9LUCI3EeiIvvUAw0J7lw" name="Flop done" guard="_lhWasCZEEeiTsem0Hypb_A" kind="external" source="_L5G1MCZEEeiTsem0Hypb_A" target="_gPq9QCI0EeiIvvUAw0J7lw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_lhWasCZEEeiTsem0Hypb_A">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_lhXBwCZEEeiTsem0Hypb_A">
+                    <language>C++</language>
+                    <body>return (counter == 6);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_yUt_gCZEEeiTsem0Hypb_A" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>log.log(&quot;[Dealer] Flop opened&quot;);&#xD;
+&#xD;
+</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_MsPiUCZEEeiTsem0Hypb_A" name="opening" kind="external" source="_j01GECI0EeiIvvUAw0J7lw" target="_L5G1MCZEEeiTsem0Hypb_A">
+                <trigger xmi:type="uml:Trigger" xmi:id="_zEPX8CZEEeiTsem0Hypb_A" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_Of9isCZEEeiTsem0Hypb_A" name="continue opening flop" guard="_g29vMCZEEeiTsem0Hypb_A" kind="external" source="_L5G1MCZEEeiTsem0Hypb_A" target="_j01GECI0EeiIvvUAw0J7lw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_g29vMCZEEeiTsem0Hypb_A">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_g2-WQCZEEeiTsem0Hypb_A">
+                    <language>C++</language>
+                    <body>return (!(counter == 6));</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_tOr50CZEEeiTsem0Hypb_A" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Call random number generator&#xD;
+int randomCard = random();&#xD;
+&#xD;
+//Call operation to check used array in order to draw out unique cards&#xD;
+randomCard = deal(randomCard);&#xD;
+&#xD;
+//Used array to keep count of cards already distributed&#xD;
+used[k] = randomCard;&#xD;
+k++;&#xD;
+&#xD;
+//Card on flop&#xD;
+randomCard = deck[randomCard];&#xD;
+&#xD;
+//Call operation to define card and suit for display&#xD;
+char card = defineCard(randomCard);&#xD;
+char suit = defineSuit(randomCard);&#xD;
+&#xD;
+log.log(&quot;[Dealer] %c %c&quot;, card, suit);&#xD;
+&#xD;
+//Store&#xD;
+flop[i] = randomCard;&#xD;
+i++;&#xD;
+&#xD;
+&#xD;
+</body>
+                </effect>
+              </transition>
+              <subvertex xmi:type="uml:State" xmi:id="_j01GECI0EeiIvvUAw0J7lw" name="Looping">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_cY3jcCI3EeiIvvUAw0J7lw" name="Entry" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self communication&#xD;
+tickOut.tick().send();&#xD;
+&#xD;
+//Increment counter&#xD;
+counter++;</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_L5G1MCZEEeiTsem0Hypb_A" kind="choice"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_IB654CGyEei3E_GTNZS2AQ" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_XtL44CGyEei3E_GTNZS2AQ" name="Finish"/>
+          <subvertex xmi:type="uml:State" xmi:id="_q4E-ACJCEeiIvvUAw0J7lw" name="Start"/>
+          <subvertex xmi:type="uml:State" xmi:id="_4C9FwCsHEeiEg8_Y4fANmQ" name="Play">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_7gPsACsHEeiEg8_Y4fANmQ" kind="entryPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_8JRa4CsHEeiEg8_Y4fANmQ" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_6ZOZkCsHEeiEg8_Y4fANmQ" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_H1UyUCsIEeiEg8_Y4fANmQ" name="Initial" kind="local" source="_7gPsACsHEeiEg8_Y4fANmQ" target="_HKsg8CsIEeiEg8_Y4fANmQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_SCQD4CsJEeiEg8_Y4fANmQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Uncomment below line to manually set a round for testing rare hands or cases&#xD;
+//setUpRoundManually();&#xD;
+&#xD;
+//Player counter&#xD;
+i=0;&#xD;
+&#xD;
+&#xD;
+//'hands' array counter&#xD;
+temp=-2;</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_gtVMsCsTEeiEg8_Y4fANmQ" name="straight?" kind="external" source="_gRFVkCsTEeiEg8_Y4fANmQ" target="_5Q8qADCFEeiNWsPkvMOOIw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_OqTuIC_fEeirsMLhmd_FLQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Create another array&#xD;
+pTempArr = new int[7];&#xD;
+&#xD;
+//Store in temparray&#xD;
+for(int z = 0; z&lt;=6; z++)&#xD;
+{&#xD;
+	tempArr[z] = seven[z];&#xD;
+}&#xD;
+&#xD;
+//Convert to 1 - 13&#xD;
+for(int j=0; j&lt;=6; j++)&#xD;
+{	&#xD;
+	tempArr[j] = ((tempArr[j] % 13) == 0) ? 13 : (tempArr[j] % 13);&#xD;
+}&#xD;
+&#xD;
+//Sort tempArray&#xD;
+pTempArr = sort(tempArr);&#xD;
+&#xD;
+//Get unique cards&#xD;
+pTempArr = getUnique(pTempArr);&#xD;
+&#xD;
+//Sort tempArray to sort after getting unique elements&#xD;
+pTempArr = sort(pTempArr);&#xD;
+&#xD;
+//Set counter for 'ptempArr'&#xD;
+int counter = 0 ;&#xD;
+&#xD;
+//Call straight check function&#xD;
+if(checkStraight(pTempArr)){&#xD;
+	&#xD;
+	log.log(&quot;[Dealer] Player %d has a Straight&quot;,i);&#xD;
+	hasStraight = true;&#xD;
+	&#xD;
+	//Code to add final hand array to globalHandArray if it is a straight&#xD;
+	for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++){&#xD;
+		finalHands[index] = pTempArr[counter];&#xD;
+		counter++;&#xD;
+	}&#xD;
+	&#xD;
+}&#xD;
+&#xD;
+//Self message&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_rff7gCsjEeiVfpwNuTtuYw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_id81wCsTEeiEg8_Y4fANmQ" name="pair dubs trips quads fh?" kind="external" source="_HKsg8CsIEeiEg8_Y4fANmQ" target="_1KiA4Dz_EeiznpwlLD5SuA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_5XKzwCsUEeiEg8_Y4fANmQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Temp array&#xD;
+int tempArr1[7];&#xD;
+&#xD;
+//Initialize best of seven card array&#xD;
+seven[0] = hands[temp];  &#xD;
+seven[1] = hands[temp+1];&#xD;
+seven[2] = flop[0];&#xD;
+seven[3] = flop[1];&#xD;
+seven[4] = flop[2];&#xD;
+seven[5] = flop[3];&#xD;
+seven[6] = flop[4];&#xD;
+&#xD;
+//Same card hit counter&#xD;
+int scHit = 0;&#xD;
+&#xD;
+//Pointer array&#xD;
+int* finalHandForPair = new int[7];&#xD;
+&#xD;
+//Make copy of seven array after applying mod of 13 to convert to 1-13 &#xD;
+for(int z = 0; z&lt;=6; z++)&#xD;
+{&#xD;
+	tempArr1[z] = ((seven[z] % 13) == 0) ? 13 : (seven[z] % 13);&#xD;
+	finalHandForPair[z] = 100;&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+//Check hands logic for pair, dubs, trips, quads and FH&#xD;
+for(int x=0;x&lt;players;x++)&#xD;
+{&#xD;
+	//If already 100 then ignore&#xD;
+	if(tempArr1[x] == 100)&#xD;
+	{&#xD;
+		continue;&#xD;
+	}&#xD;
+	&#xD;
+	for(int y=x+1; y&lt;7; y++)&#xD;
+		{&#xD;
+			if(tempArr1[x] == tempArr1[y])&#xD;
+			{&#xD;
+				//Check hits&#xD;
+				scHit++;&#xD;
+				tempArr1[y] = 100;&#xD;
+			}	&#xD;
+		}&#xD;
+	&#xD;
+	if(scHit == 1)&#xD;
+	{	&#xD;
+		//Hit a pair after trips then full house&#xD;
+		if(hasTrips == true)&#xD;
+		{	&#xD;
+			hasFull = true;&#xD;
+			hasTrips = false;&#xD;
+			hasPair = false;&#xD;
+		}&#xD;
+		//Hit a pair after another pair then dubs&#xD;
+		else if (hasPair == true){ &#xD;
+			&#xD;
+			hasDubs = true; &#xD;
+			hasPair = false;&#xD;
+		}&#xD;
+		//No hand before, hence pair&#xD;
+		else{	&#xD;
+			hasPair = true;	&#xD;
+		}	&#xD;
+	}&#xD;
+&#xD;
+	if(scHit == 2)&#xD;
+	{	&#xD;
+		//Full house case&#xD;
+		if(hasPair == true){ &#xD;
+		&#xD;
+			hasFull = true; &#xD;
+			hasTrips = false;&#xD;
+			hasPair = false;&#xD;
+		}&#xD;
+		//Trips case&#xD;
+		else{	&#xD;
+		&#xD;
+			hasTrips = true;&#xD;
+			hasPair = false;	&#xD;
+		}	&#xD;
+		&#xD;
+	}&#xD;
+&#xD;
+	//Another same card hit after trips then Quads&#xD;
+	if(scHit == 3)&#xD;
+	{	&#xD;
+		hasQuads = true;&#xD;
+		hasFull = false;&#xD;
+		hasTrips = false;&#xD;
+		hasPair = false;&#xD;
+	}&#xD;
+&#xD;
+	if(scHit > 0)&#xD;
+		tempArr1[x] = 100;	&#xD;
+	scHit = 0;	&#xD;
+	&#xD;
+}&#xD;
+&#xD;
+//Print hand&#xD;
+if(hasPair){&#xD;
+	log.log(&quot;[Dealer] Player %d has pair&quot;, i);&#xD;
+}&#xD;
+else if(hasDubs){&#xD;
+	log.log(&quot;[Dealer] Player %d has double pair&quot;, i);&#xD;
+}&#xD;
+else if(hasTrips)&#xD;
+{&#xD;
+	log.log(&quot;[Dealer] Player %d has trips&quot;, i);&#xD;
+}&#xD;
+else if(hasQuads)&#xD;
+{&#xD;
+	log.log(&quot;[Dealer] Player %d has four of a kind&quot;, i);&#xD;
+}&#xD;
+else if(hasFull) &#xD;
+{&#xD;
+	log.log(&quot;[Dealer] Player %d has full house&quot;, i);&#xD;
+}	&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//Code to set all the scHit cards replaced as 100 to be referenced from seven and stored in finalHand array&#xD;
+for(int index =0 ; index &lt; 7 ; index++){&#xD;
+	if(tempArr1[index] == 100)&#xD;
+		finalHandForPair[index] = ((seven[index] % 13) == 0) ? 13 : (seven[index] % 13);&#xD;
+}&#xD;
+&#xD;
+//Sorting the array&#xD;
+sort(finalHandForPair);&#xD;
+&#xD;
+//Initializing counter for finalHandForPair array&#xD;
+int counter = 0;&#xD;
+//Code to add final hand array to globalHandArray&#xD;
+for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++){&#xD;
+	finalHands[index] = finalHandForPair[counter];&#xD;
+	counter++;&#xD;
+}&#xD;
+&#xD;
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_2hcHUCsVEeiEg8_Y4fANmQ" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_Q-kYUCsUEeiEg8_Y4fANmQ" name="AllPlayersAreDone" guard="_bPG0ACsUEeiEg8_Y4fANmQ" kind="external" source="_PnPZACsUEeiEg8_Y4fANmQ" target="_8JRa4CsHEeiEg8_Y4fANmQ">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_bPG0ACsUEeiEg8_Y4fANmQ">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_bPHbECsUEeiEg8_Y4fANmQ">
+                    <language>C++</language>
+                    <body>return (i == players);</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_RjHP0CsUEeiEg8_Y4fANmQ" name="! AllPlayersAreDone" guard="_ZjxTkCsUEeiEg8_Y4fANmQ" kind="external" source="_PnPZACsUEeiEg8_Y4fANmQ" target="_HKsg8CsIEeiEg8_Y4fANmQ">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_ZjxTkCsUEeiEg8_Y4fANmQ">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjyhsCsUEeiEg8_Y4fANmQ">
+                    <language>C++</language>
+                    <body>return (!(i == players));</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_2bUakC_eEeirsMLhmd_FLQ" name="continue" kind="external" source="_psSTcC_vEeirsMLhmd_FLQ" target="_PnPZACsUEeiEg8_Y4fANmQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="__tKfgDCFEeiNWsPkvMOOIw" name="flush st flush royal flush?" kind="external" source="_5Q8qADCFEeiNWsPkvMOOIw" target="_psBNsC_vEeirsMLhmd_FLQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_CpEnoDDhEeiFE-XFaysu8w" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>    //Array declaration for each suit&#xD;
+    int* s =new int[7];&#xD;
+    int* h =new int[7]; &#xD;
+    int* d =new int[7]; &#xD;
+    int* c =new int[7];&#xD;
+    &#xD;
+    //Counter for each suit&#xD;
+    int spades = 0;&#xD;
+    int hearts = 0;&#xD;
+    int diamonds = 0;&#xD;
+    int clubs = 0;&#xD;
+    int counter = 0;&#xD;
+    int flushCount = 5;&#xD;
+    int flushSuit = -1;&#xD;
+&#xD;
+    //Store flop in tempArr&#xD;
+    for(int z = 0; z&lt;=6; z++)&#xD;
+    {&#xD;
+    	 tempArr[z] = seven[z];	&#xD;
+    	//initialize to avoid dealing with garbage values&#xD;
+    	 s[z] = 100;&#xD;
+    	 h[z] = 100;&#xD;
+   	 d[z] = 100; &#xD;
+   	 c[z] = 100;&#xD;
+    }&#xD;
+&#xD;
+    //Condition for flush&#xD;
+    for(int j=0; j&lt;=6; j++)&#xD;
+    {&#xD;
+    	char temp = defineSuit(tempArr[j]);&#xD;
+    	if(temp == 's')&#xD;
+    	{		&#xD;
+    		spades++;&#xD;
+   		s[counter] = tempArr[j];&#xD;
+   	       if(spades >= flushCount)&#xD;
+    		{	&#xD;
+    			flushSuit = 0;&#xD;
+   		 }&#xD;
+    	}&#xD;
+    	else if(temp == 'h')&#xD;
+  	{	&#xD;
+   		 hearts++;&#xD;
+   		 h[counter] = tempArr[j];&#xD;
+   		 if(hearts >= flushCount)&#xD;
+    	      	 {	&#xD;
+    	 		flushSuit = 1;&#xD;
+    		 }&#xD;
+    	}&#xD;
+       else if(temp == 'd')&#xD;
+    	{&#xD;
+    		diamonds++;&#xD;
+    		d[counter] = tempArr[j];&#xD;
+   		if(diamonds >= flushCount)&#xD;
+    		{		&#xD;
+   			flushSuit = 2;&#xD;
+    		}&#xD;
+    	}&#xD;
+   	else&#xD;
+    	{&#xD;
+    		clubs++;&#xD;
+    		c[counter] = tempArr[j];&#xD;
+   		if(clubs >= flushCount)&#xD;
+    		{	&#xD;
+   		 flushSuit = 3;&#xD;
+    		}&#xD;
+    	}&#xD;
+    	counter++;&#xD;
+    }&#xD;
+    &#xD;
+    sort(s);&#xD;
+    sort(h);&#xD;
+    sort(d);&#xD;
+    sort(c);&#xD;
+&#xD;
+    //Check if flush&#xD;
+    if(flushSuit >= 0)&#xD;
+    {&#xD;
+    	int* tmpFlushCards = new int[7];&#xD;
+    	log.log(&quot;[Dealer] Player %d has a flush&quot;, i);&#xD;
+    	hasFlush = true;&#xD;
+&#xD;
+   	 //Check flush suit?&#xD;
+   	 if(flushSuit == 0)&#xD;
+    	 {&#xD;
+    		tmpFlushCards=s;&#xD;
+    		//log.log(&quot;Spades Flush!&quot;);&#xD;
+   	 }&#xD;
+    	else if(flushSuit == 1)&#xD;
+  	 {&#xD;
+    		tmpFlushCards =h;&#xD;
+    		//log.log(&quot;Hearts Flush!&quot;);&#xD;
+    	 }&#xD;
+    	else if(flushSuit == 2)&#xD;
+       {&#xD;
+    		tmpFlushCards =d;&#xD;
+    		//log.log(&quot;Diamonds Flush!&quot;);&#xD;
+    	}&#xD;
+    	else&#xD;
+    	{&#xD;
+    		tmpFlushCards =c;&#xD;
+    		//log.log(&quot;Clubs Flush!&quot;);&#xD;
+    	}&#xD;
+&#xD;
+    //If you want cards with suit in the globalHandArray , use the below commented code and delete the similar code active below&#xD;
+    /*sort(tmpFlushCards);&#xD;
+    int counter = 0;&#xD;
+    //Code to add final hand array to globalHandArray if it is a flush&#xD;
+    for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++){&#xD;
+    finalHands[index] = tmpFlushCards[counter];&#xD;
+    counter++;&#xD;
+    }*/&#xD;
+&#xD;
+    //Code to convert from 1 - 13&#xD;
+    for(int k = 0 ; k &lt; 7 ; k++){&#xD;
+   	 if(tmpFlushCards[k] != 100)&#xD;
+   		 tmpFlushCards[k] = ((tmpFlushCards[k] % 13) == 0) ? 13 : (tmpFlushCards[k] % 13);&#xD;
+    }&#xD;
+&#xD;
+    //Get unique cards and sort&#xD;
+    getUnique(tmpFlushCards);&#xD;
+    sort(tmpFlushCards);&#xD;
+&#xD;
+    /*log.log(&quot;Flush Cards :&quot;);&#xD;
+    for(int k = 0 ; k &lt; 7 ; k++){&#xD;
+    log.log(&quot;%d&quot;,tmpFlushCards[k]);&#xD;
+    }*/&#xD;
+&#xD;
+    int tmpCounter = 0;&#xD;
+&#xD;
+    //Code to add final hand array to globalHandArray if it is a flush&#xD;
+    for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++){&#xD;
+    	finalHands[index] = tmpFlushCards[tmpCounter];&#xD;
+    	tmpCounter++;&#xD;
+    }&#xD;
+&#xD;
+    //Check straight flush&#xD;
+    if(checkStraight(tmpFlushCards)){&#xD;
+    	log.log(&quot;[Dealer] Player %d has Straight Flush!&quot;,i);&#xD;
+    	hasStraightFlush = true;&#xD;
+    	int tmpCounter = 0;&#xD;
+    	//Code to add final hand array to globalHandArray if it is a flush&#xD;
+    	for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++){&#xD;
+    		finalHands[index] = tmpFlushCards[tmpCounter];&#xD;
+    		tmpCounter++;&#xD;
+   	 }	&#xD;
+    }&#xD;
+&#xD;
+    //Check royal flush&#xD;
+    //If straight flush is true&#xD;
+    if(hasStraightFlush){&#xD;
+    //Call nut straight operation to check if SF is of the highest order&#xD;
+    if(checkIfNutStraight(tmpFlushCards))&#xD;
+    {&#xD;
+    	hasRoyalFlush = true;&#xD;
+    	log.log(&quot;[Dealer] Woah! Player %d has ROYAL Flush!!&quot;, i);&#xD;
+    	&#xD;
+	//Counter for tmpFlushc&#xD;
+	int tmpCounter = 0;&#xD;
+&#xD;
+    	//Code to add final hand array to globalHandArray if it is a flush&#xD;
+   	for(int index = (i-1)*7 ; index &lt; ((i-1)*7) + 7 ; index++)&#xD;
+   	 {&#xD;
+   		 finalHands[index] = tmpFlushCards[tmpCounter];&#xD;
+   		 tmpCounter++;&#xD;
+   	 }&#xD;
+    }&#xD;
+   }&#xD;
+ }&#xD;
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_A2llsDCGEeiNWsPkvMOOIw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_7uNJQDz_EeiznpwlLD5SuA" name="hasFull or hasQuads" guard="_Un600D0AEeiznpwlLD5SuA" kind="external" source="_1KiA4Dz_EeiznpwlLD5SuA" target="_psBNsC_vEeirsMLhmd_FLQ">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Un600D0AEeiznpwlLD5SuA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_Un7b4D0AEeiznpwlLD5SuA">
+                    <language>C++</language>
+                    <body>return (hasQuads || hasFull);</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_8hEJkDz_EeiznpwlLD5SuA" name="! hasFull or hasQuads" guard="_KLQosD0AEeiznpwlLD5SuA" kind="external" source="_1KiA4Dz_EeiznpwlLD5SuA" target="_gRFVkCsTEeiEg8_Y4fANmQ">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_KLQosD0AEeiznpwlLD5SuA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_KLR20D0AEeiznpwlLD5SuA">
+                    <language>C++</language>
+                    <body>return (!(hasQuads || hasFull));</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_OAd_sD0AEeiznpwlLD5SuA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self message&#xD;
+tickOut.tick().send();</body>
+                </effect>
+              </transition>
+              <subvertex xmi:type="uml:State" xmi:id="_HKsg8CsIEeiEg8_Y4fANmQ" name="Looping">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_vJvd0CsREeiEg8_Y4fANmQ" name="Entry" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Increment Player counter&#xD;
+i++;&#xD;
+&#xD;
+//Increment hands counter &#xD;
+temp= temp+2;&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();&#xD;
+&#xD;
+//Set all boolean hand attributes to false&#xD;
+hasPair = false;&#xD;
+hasDubs = false;&#xD;
+hasTrips = false;&#xD;
+hasQuads = false;&#xD;
+hasStraight = false;&#xD;
+hasFlush = false;&#xD;
+hasFull = false;&#xD;
+hasStraightFlush = false;&#xD;
+hasRoyalFlush = false;</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_gRFVkCsTEeiEg8_Y4fANmQ" name="Check Straight"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_PnPZACsUEeiEg8_Y4fANmQ" kind="choice"/>
+              <subvertex xmi:type="uml:State" xmi:id="_uydBMC_dEeirsMLhmd_FLQ" name="Hand Rank">
+                <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_psBNsC_vEeirsMLhmd_FLQ" kind="entryPoint"/>
+                <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_psSTcC_vEeirsMLhmd_FLQ" kind="exitPoint"/>
+                <region xmi:type="uml:Region" xmi:id="_prpaQC_vEeirsMLhmd_FLQ" name="Region1">
+                  <transition xmi:type="uml:Transition" xmi:id="_qdsiQC_vEeirsMLhmd_FLQ" name="Initial" kind="local" source="_psBNsC_vEeirsMLhmd_FLQ" target="_qHUCkC_vEeirsMLhmd_FLQ">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rZ5r0C_vEeirsMLhmd_FLQ" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_q54vAC_vEeirsMLhmd_FLQ" name="checkRank" kind="external" source="_qHUCkC_vEeirsMLhmd_FLQ" target="_A7clwDFxEei8z5fxbyJ6nw">
+                    <trigger xmi:type="uml:Trigger" xmi:id="_vP5tAC_vEeirsMLhmd_FLQ" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_EkX0QDFxEei8z5fxbyJ6nw" name="royal flush" guard="_O7VBADFxEei8z5fxbyJ6nw" kind="external" source="_A7clwDFxEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_O7VBADFxEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_O7VoEDFxEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasRoyalFlush;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Yt7jgDFxEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 10;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_H4w9MDFxEei8z5fxbyJ6nw" name="! royal flush" guard="_MSuAADFxEei8z5fxbyJ6nw" kind="external" source="_A7clwDFxEei8z5fxbyJ6nw" target="_BP2IcDFxEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_MSuAADFxEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_MSunEDFxEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasRoyalFlush));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_eBKXsDFxEei8z5fxbyJ6nw" name="st. flush" guard="_-m0bQDFxEei8z5fxbyJ6nw" kind="external" source="_BP2IcDFxEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_-m0bQDFxEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-m1CUDFxEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasStraightFlush;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_w30UoDFxEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 9;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_gVCe0DFxEei8z5fxbyJ6nw" name="! st. flush" guard="_Af-VQDFyEei8z5fxbyJ6nw" kind="external" source="_BP2IcDFxEei8z5fxbyJ6nw" target="_ewNPADFxEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_Af-VQDFyEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Af-8UDFyEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasStraightFlush));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_taUTADFxEei8z5fxbyJ6nw" name="Hand Rank Set" kind="external" source="___vLcDFwEei8z5fxbyJ6nw" target="_psSTcC_vEeirsMLhmd_FLQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_IfvoMDFyEei8z5fxbyJ6nw" name="! 4 of a kind" guard="_VBHeEDFyEei8z5fxbyJ6nw" kind="external" source="_ewNPADFxEei8z5fxbyJ6nw" target="_hJdI4DFyEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_VBHeEDFyEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VBIFIDFyEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasQuads));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_X0BDgDFyEei8z5fxbyJ6nw" name="4 of a kind" guard="_b9TNEDFyEei8z5fxbyJ6nw" kind="external" source="_ewNPADFxEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_b9TNEDFyEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b9TNETFyEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasQuads;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_gMP5wDFyEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 8;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_rnQkgDFyEei8z5fxbyJ6nw" name="! full house" guard="_61cl8DFyEei8z5fxbyJ6nw" kind="external" source="_hJdI4DFyEei8z5fxbyJ6nw" target="_hgfv4DFyEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_61cl8DFyEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_61cl8TFyEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasFull));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_sN_NUDFyEei8z5fxbyJ6nw" name="! flush" guard="_JJCAUDFzEei8z5fxbyJ6nw" kind="external" source="_hgfv4DFyEei8z5fxbyJ6nw" target="_iKmc0DFyEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_JJCAUDFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_JJCAUTFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasFlush));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_tnmEkDFyEei8z5fxbyJ6nw" name="! straight" guard="_nR4DMDFzEei8z5fxbyJ6nw" kind="external" source="_iKmc0DFyEei8z5fxbyJ6nw" target="_h8B1UDFyEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_nR4DMDFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_nR4DMTFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasStraight));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_uQIEMDFyEei8z5fxbyJ6nw" name="! trips" guard="_6orf0DFzEei8z5fxbyJ6nw" kind="external" source="_h8B1UDFyEei8z5fxbyJ6nw" target="_tAclADFyEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_6orf0DFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6orf0TFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasTrips));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_wy3GsDFyEei8z5fxbyJ6nw" name="full house" guard="_38h4EDFyEei8z5fxbyJ6nw" kind="external" source="_hJdI4DFyEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_38h4EDFyEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_38ifIDFyEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasFull;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_1xSvkDFyEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 7;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_x7osoDFyEei8z5fxbyJ6nw" name="flush" guard="_H1Z1QDFzEei8z5fxbyJ6nw" kind="external" source="_hgfv4DFyEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_H1Z1QDFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_H1acUDFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasFlush;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LNxfQDFzEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 6;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_yZg7cDFyEei8z5fxbyJ6nw" name="straight" guard="_l6TMQDFzEei8z5fxbyJ6nw" kind="external" source="_iKmc0DFyEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_l6TMQDFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_l6TMQTFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasStraight;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_fylnIDFzEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 5;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_iBB0oDFzEei8z5fxbyJ6nw" name="trips" guard="_4eb10DFzEei8z5fxbyJ6nw" kind="external" source="_h8B1UDFyEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_4eb10DFzEei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_4eb10TFzEei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasTrips;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_-9cgoDFzEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 4;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_qaVB4DFzEei8z5fxbyJ6nw" name="dubs" guard="_BRiDIDF0Eei8z5fxbyJ6nw" kind="external" source="_tAclADFyEei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_BRiDIDF0Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_BRiDITF0Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasDubs;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="__rD0kDFzEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 3;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_C1M1UDF0Eei8z5fxbyJ6nw" name="! dubs" guard="_EFfYgDF0Eei8z5fxbyJ6nw" kind="external" source="_tAclADFyEei8z5fxbyJ6nw" target="_CTczIDF0Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_EFfYgDF0Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_EFf_kDF0Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasDubs));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_Gus2cDF0Eei8z5fxbyJ6nw" name="pair" guard="_KtiDgDF0Eei8z5fxbyJ6nw" kind="external" source="_CTczIDF0Eei8z5fxbyJ6nw" target="___vLcDFwEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_KtiDgDF0Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_KtiDgTF0Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return hasPair;</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Y0nS8DF0Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 2;</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_L_YF4DF0Eei8z5fxbyJ6nw" name="high Card" guard="_MkPtgDF0Eei8z5fxbyJ6nw" kind="external" source="_CTczIDF0Eei8z5fxbyJ6nw" target="_psSTcC_vEeirsMLhmd_FLQ">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_MkPtgDF0Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_MkPtgTF0Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(hasPair));</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_b2JxUDF0Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Set rank&#xD;
+rank[i-1] = 1;</body>
+                    </effect>
+                  </transition>
+                  <subvertex xmi:type="uml:State" xmi:id="_qHUCkC_vEeirsMLhmd_FLQ" name="Initial"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="___vLcDFwEei8z5fxbyJ6nw" kind="junction"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_A7clwDFxEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_BP2IcDFxEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_ewNPADFxEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_hJdI4DFyEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_hgfv4DFyEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_h8B1UDFyEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_iKmc0DFyEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_tAclADFyEei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_CTczIDF0Eei8z5fxbyJ6nw" kind="choice"/>
+                </region>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_5Q8qADCFEeiNWsPkvMOOIw" name="Check Flush"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_1KiA4Dz_EeiznpwlLD5SuA" kind="choice"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_0vuEUC_yEeirsMLhmd_FLQ" name="Check Winner">
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_53pncC_yEeirsMLhmd_FLQ" kind="entryPoint"/>
+            <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_GXH_4C_zEeirsMLhmd_FLQ" kind="exitPoint"/>
+            <region xmi:type="uml:Region" xmi:id="_53kH4C_yEeirsMLhmd_FLQ" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_PMA88C_zEeirsMLhmd_FLQ" name="Initial" kind="local" source="_53pncC_yEeirsMLhmd_FLQ" target="_OzlO0C_zEeirsMLhmd_FLQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_UPh6IC_zEeirsMLhmd_FLQ" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self communicate&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_PisXkC_zEeirsMLhmd_FLQ" name="decide Winner" kind="external" source="_OzlO0C_zEeirsMLhmd_FLQ" target="_E_AbcDFpEei8z5fxbyJ6nw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_aYHKEDCEEeiNWsPkvMOOIw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Array to compare players based on rank&#xD;
+highest = new int[players];&#xD;
+&#xD;
+//Variables&#xD;
+highestRank = 0;&#xD;
+highCount = 0;&#xD;
+int highestTempIndex = 0;&#xD;
+&#xD;
+//Call clear array operation&#xD;
+highest = clearArray(highest, players);&#xD;
+&#xD;
+for(int i=0; i&lt; players; i++)&#xD;
+{&#xD;
+	//Finding highest rank&#xD;
+	if(rank[i] > highestRank){&#xD;
+	&#xD;
+		highestRank = rank[i];&#xD;
+		highestTempIndex = 0;&#xD;
+		//highest = clearArray(highest);&#xD;
+		highest[highestTempIndex] = i;&#xD;
+		highCount = 1;&#xD;
+		highestTempIndex++;	&#xD;
+	}&#xD;
+	else if(rank[i] == highestRank){&#xD;
+		highCount++;&#xD;
+		highest[highestTempIndex] = i;&#xD;
+		highestTempIndex++;&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Uncomment below code to print finalHand array&#xD;
+/*log.log(&quot;Global Final Hand Array: &quot;);&#xD;
+for(int index = 0 ; index &lt; (players * 7) ; index++)&#xD;
+{&#xD;
+	log.log(&quot;%d&quot;,finalHands[index]);&#xD;
+}&#xD;
+*/&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_Uqgl8C_zEeirsMLhmd_FLQ" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_HujK4DFpEei8z5fxbyJ6nw" name="Tie?" kind="external" source="_E_AbcDFpEei8z5fxbyJ6nw" target="_oVTIsDFrEei8z5fxbyJ6nw">
+                <trigger xmi:type="uml:Trigger" xmi:id="_lzBrIDFpEei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_u5PBsDFpEei8z5fxbyJ6nw" name="declare" kind="external" source="_eD1K0DFpEei8z5fxbyJ6nw" target="_t_GUsDFpEei8z5fxbyJ6nw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_YDkRoD6HEeimEsN7A7xrjA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>log.log(&quot;[Dealer] || Player %d wins the round! ||&quot;, highest[0]+1);</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_cn008DFrEei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_x0za8DFpEei8z5fxbyJ6nw" name="Next round" kind="external" source="_t_GUsDFpEei8z5fxbyJ6nw" target="_GXH_4C_zEeirsMLhmd_FLQ">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_jgToUDFuEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>&#xD;
+log.log(&quot;[Dealer] --- Round %d Over ---&quot;, r);</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_ngCUoDFrEei8z5fxbyJ6nw" name="" kind="external" source="_Z1UmMDFtEei8z5fxbyJ6nw" target="_t_GUsDFpEei8z5fxbyJ6nw"/>
+              <transition xmi:type="uml:Transition" xmi:id="_qDd6sDFrEei8z5fxbyJ6nw" name="No Tie" guard="_An1fgDFsEei8z5fxbyJ6nw" kind="external" source="_oVTIsDFrEei8z5fxbyJ6nw" target="_eD1K0DFpEei8z5fxbyJ6nw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_An1fgDFsEei8z5fxbyJ6nw">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_An1fgTFsEei8z5fxbyJ6nw">
+                    <language>C++</language>
+                    <body>//To check if more than one player has not incremented high count to decide winner&#xD;
+return (highCount == 1);</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_1Rz7EDFuEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>//Self communicate&#xD;
+tickOut.tick().send();&#xD;
+</body>
+                </effect>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_qaeFcDFrEei8z5fxbyJ6nw" name="Tie" guard="_-5crEDFrEei8z5fxbyJ6nw" kind="external" source="_oVTIsDFrEei8z5fxbyJ6nw" target="_Z1C5YDFtEei8z5fxbyJ6nw">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_-5crEDFrEei8z5fxbyJ6nw">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_-5crETFrEei8z5fxbyJ6nw">
+                    <language>C++</language>
+                    <body>//To check if more than one player has incremented high count, if true then TIE&#xD;
+return (highCount > 1);&#xD;
+</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <subvertex xmi:type="uml:State" xmi:id="_OzlO0C_zEeirsMLhmd_FLQ" name="Initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_E_AbcDFpEei8z5fxbyJ6nw" name="Check Winner"/>
+              <subvertex xmi:type="uml:State" xmi:id="_eD1K0DFpEei8z5fxbyJ6nw" name="Declare Winner"/>
+              <subvertex xmi:type="uml:State" xmi:id="_eRvD8DFpEei8z5fxbyJ6nw" name="Tie">
+                <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_Z1C5YDFtEei8z5fxbyJ6nw" kind="entryPoint"/>
+                <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_Z1UmMDFtEei8z5fxbyJ6nw" kind="exitPoint"/>
+                <region xmi:type="uml:Region" xmi:id="_Z0mNcDFtEei8z5fxbyJ6nw" name="Region1">
+                  <transition xmi:type="uml:Transition" xmi:id="_uZsCIDFtEei8z5fxbyJ6nw" name="Initial" kind="local" source="_Z1C5YDFtEei8z5fxbyJ6nw" target="_tTP-gDFtEei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_2MsrcDFtEei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] It is a Tie!&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_uzbX0DFtEei8z5fxbyJ6nw" name="Evaluate" kind="external" source="_tTP-gDFtEei8z5fxbyJ6nw" target="_7vStIDF0Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ML9NcDIxEeiBYMGMRx41sg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//To determine which players on Tie&#xD;
+tieCounter = 0;&#xD;
+for(int x=0; x &lt; players; x++){&#xD;
+	if(rank[x]==highestRank)&#xD;
+	{	&#xD;
+		playersInTie[tieCounter] = x+1; &#xD;
+		tieCounter++;&#xD;
+		log.log(&quot;[Dealer] Player %d is in a tie&quot;, x+1);&#xD;
+	}&#xD;
+}&#xD;
+  &#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_9kq-kDFtEei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_9YCMkDF0Eei8z5fxbyJ6nw" guard="_IwIGMDF1Eei8z5fxbyJ6nw" kind="external" source="_7vStIDF0Eei8z5fxbyJ6nw" target="_V0pFYDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_IwIGMDF1Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_IwIGMTF1Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 1));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_-goMUDF0Eei8z5fxbyJ6nw" guard="_HRIYoDF1Eei8z5fxbyJ6nw" kind="external" source="_7vStIDF0Eei8z5fxbyJ6nw" target="_-EY8QDF0Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_HRIYoDF1Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_HRI_sDF1Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 1);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_KPV2MDF1Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on High Card&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_gSwqEDF1Eei8z5fxbyJ6nw" guard="_rlkbEDF1Eei8z5fxbyJ6nw" kind="external" source="_V0pFYDF1Eei8z5fxbyJ6nw" target="_YHtUMDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_rlkbEDF1Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rllCIDF1Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 2));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_hBFvsDF1Eei8z5fxbyJ6nw" guard="_EQeOkDF2Eei8z5fxbyJ6nw" kind="external" source="_YHtUMDF1Eei8z5fxbyJ6nw" target="_X4E8wDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_EQeOkDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_EQe1oDF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 3));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_kxgtUDF1Eei8z5fxbyJ6nw" guard="_qDqjcDF1Eei8z5fxbyJ6nw" kind="external" source="_V0pFYDF1Eei8z5fxbyJ6nw" target="_ivqKUDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_qDqjcDF1Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qDqjcTF1Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 2);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9DfDcDF1Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on a Pair&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_91MNMDF1Eei8z5fxbyJ6nw" guard="_FWFLwDF2Eei8z5fxbyJ6nw" kind="external" source="_YHtUMDF1Eei8z5fxbyJ6nw" target="_j4VCkDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_FWFLwDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FWFy0DF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 3);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="__sr6UDF1Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Dubs&quot;);&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_K4MwgDF2Eei8z5fxbyJ6nw" guard="_Q98mwDF2Eei8z5fxbyJ6nw" kind="external" source="_X4E8wDF1Eei8z5fxbyJ6nw" target="_jBycIDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_Q98mwDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q98mwTF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 4);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_TqH5IDF2Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Trips&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_PfV6wDF2Eei8z5fxbyJ6nw" guard="_SbBowDF2Eei8z5fxbyJ6nw" kind="external" source="_X4E8wDF1Eei8z5fxbyJ6nw" target="_XqB5sDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_SbBowDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_SbBowTF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 4));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_abCzUDF2Eei8z5fxbyJ6nw" guard="_v-NZ0DF2Eei8z5fxbyJ6nw" kind="external" source="_XqB5sDF1Eei8z5fxbyJ6nw" target="_jjxu4DF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_v-NZ0DF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_v-OA4DF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 5);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ldVcEDF2Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Straight&quot;);&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_bOJrQDF2Eei8z5fxbyJ6nw" guard="_ou56gDF2Eei8z5fxbyJ6nw" kind="external" source="_XqB5sDF1Eei8z5fxbyJ6nw" target="_XcyH4DF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_ou56gDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ou6hkDF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 5));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_dHi10DF2Eei8z5fxbyJ6nw" guard="_tSVCYDF2Eei8z5fxbyJ6nw" kind="external" source="_XcyH4DF1Eei8z5fxbyJ6nw" target="_XTheMDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_tSVCYDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_tSVpcDF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 6));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_eG1IkDF2Eei8z5fxbyJ6nw" guard="_uHr9EDF2Eei8z5fxbyJ6nw" kind="external" source="_XTheMDF1Eei8z5fxbyJ6nw" target="_b2LKADF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_uHr9EDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uHskIDF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 7));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_e2H3gDF2Eei8z5fxbyJ6nw" guard="_wmh-EDF2Eei8z5fxbyJ6nw" kind="external" source="_XcyH4DF1Eei8z5fxbyJ6nw" target="_jQ4oEDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_wmh-EDF2Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wmilIDF2Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 6);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_mwftEDF2Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Flush&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_0iMiYDF2Eei8z5fxbyJ6nw" guard="_B8lq8DF3Eei8z5fxbyJ6nw" kind="external" source="_XTheMDF1Eei8z5fxbyJ6nw" target="_xxYAkDF2Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_B8lq8DF3Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_B8mSADF3Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 7);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_REhTYDF3Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Full House&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_3z3HcDF2Eei8z5fxbyJ6nw" guard="_IM6ZgDF3Eei8z5fxbyJ6nw" kind="external" source="_b2LKADF1Eei8z5fxbyJ6nw" target="_cDkFwDF1Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_IM6ZgDF3Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_IM6ZgTF3Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 8));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_4R3SEDF2Eei8z5fxbyJ6nw" guard="_Xa3xcDF3Eei8z5fxbyJ6nw" kind="external" source="_cDkFwDF1Eei8z5fxbyJ6nw" target="_Z1UmMDFtEei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_Xa3xcDF3Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xa4YgDF3Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (!(highestRank == 9));</body>
+                      </specification>
+                    </ownedRule>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_-0mmUDF2Eei8z5fxbyJ6nw" guard="_JBAv8DF3Eei8z5fxbyJ6nw" kind="external" source="_b2LKADF1Eei8z5fxbyJ6nw" target="_yIHsoDF2Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_JBAv8DF3Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_JBAv8TF3Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 8);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_SXIx0DF3Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Four of a Kind&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_VGn24DF3Eei8z5fxbyJ6nw" guard="_nUFs4DF3Eei8z5fxbyJ6nw" kind="external" source="_cDkFwDF1Eei8z5fxbyJ6nw" target="_JgmO8DF3Eei8z5fxbyJ6nw">
+                    <ownedRule xmi:type="uml:Constraint" xmi:id="_nUFs4DF3Eei8z5fxbyJ6nw">
+                      <specification xmi:type="uml:OpaqueExpression" xmi:id="_nUFs4TF3Eei8z5fxbyJ6nw">
+                        <language>C++</language>
+                        <body>return (highestRank == 9);</body>
+                      </specification>
+                    </ownedRule>
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_vkWS4DF3Eei8z5fxbyJ6nw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>log.log(&quot;[Dealer] Tie on Straight Flush&quot;);&#xD;
+&#xD;
+//Self communicate&#xD;
+tickOut.tick().send();</body>
+                    </effect>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_5weIoDF3Eei8z5fxbyJ6nw" name="evalHC" kind="external" source="_-EY8QDF0Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_HozOgDI1EeiBYMGMRx41sg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int c = 0;&#xD;
+int newC = tieCounter*2;&#xD;
+int temp[newC];&#xD;
+&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];&#xD;
+	t = t*2;&#xD;
+  	&#xD;
+	//Store all hands of tied players in a temp array&#xD;
+	temp[c] = ((hands[t-2] % 13) == 0) ? 13 : ((hands[t-2] % 13) == 1) ? 14 : (hands[t-2] % 13); &#xD;
+	temp[c+1] = ((hands[t-1] % 13) == 0) ? 13 : ((hands[t-1] % 13) == 1) ? 14 : (hands[t-1] % 13); &#xD;
+	&#xD;
+	log.log(&quot;[Dealer]  Player %d: %d, %d&quot;,playersInTie[x], temp[c], temp[c+1]);&#xD;
+	c = c+2;	&#xD;
+&#xD;
+}&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, newC);&#xD;
+log.log(&quot;[Dealer] Higher high card is: %d&quot;, higherNumber); &#xD;
+&#xD;
+int split = 0;&#xD;
+//Print winners&#xD;
+for(int x=1; x &lt;= newC; x++){&#xD;
+		if(temp[x-1] == higherNumber)&#xD;
+		{	&#xD;
+			//To check if number is odd or even and then chose player ID based on it.&#xD;
+			if(x % 2 == 0)&#xD;
+			{&#xD;
+				int y = x/2; &#xD;
+				log.log(&quot;[Dealer] || Player %d wins this round with the high card %d! ||&quot;, playersInTie[y-1], higherNumber);&#xD;
+				split++;&#xD;
+			}&#xD;
+			else{&#xD;
+				int y = x+1;&#xD;
+				y = y/2;&#xD;
+				log.log(&quot;[Dealer] || Player %d win this round with the higher card! %d ||&quot;, playersInTie[y-1], higherNumber);&#xD;
+				split++;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Split pot?&#xD;
+if(split > 1)&#xD;
+  {&#xD;
+    log.log(&quot;[Dealer] SPLIT POT!&quot;);&#xD;
+  }&#xD;
+&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_SPD-cDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_68U3wDF3Eei8z5fxbyJ6nw" name="evalPair" kind="external" source="_ivqKUDF1Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_k7Cb8D3aEeiNEIWwOFzDiw" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Counter for finalHands Array&#xD;
+int t = 0;&#xD;
+&#xD;
+//Counter for temp array&#xD;
+int c = 0;&#xD;
+&#xD;
+int temp[tieCounter];&#xD;
+int playersInTie_new[3];&#xD;
+&#xD;
+//To count split pot scenario&#xD;
+int split=0;&#xD;
+&#xD;
+//New tieCounter based on players having exactly same pair&#xD;
+int pt=0;&#xD;
+&#xD;
+&#xD;
+hasTrips = false;&#xD;
+hasDubs = false;&#xD;
+hasPair = true;&#xD;
+&#xD;
+//Store player hands from finalHands array to temp array&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x]; &#xD;
+	&#xD;
+	//Setting counter to access global hand array&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Store pair number, handle case for ACE&#xD;
+	temp[c] = (finalHands[t] == 1) ? 14 : (finalHands[t]); &#xD;
+	c++;&#xD;
+	log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x], finalHands[t]);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher pair is: %d&quot;, higherNumber); &#xD;
+&#xD;
+//Check highest pair&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			split++;&#xD;
+			playersInTie_new[pt] = playersInTie[x];&#xD;
+			pt++;&#xD;
+		}&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to declare winner if sole high pair winner else same pair higher kicker winner&#xD;
+checkKicker(playersInTie_new, pt, split, higherNumber);</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_TkoDMDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_Fra3sDF4Eei8z5fxbyJ6nw" name="evalDubs" kind="external" source="_j4VCkDF1Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ZGRBIDobEeiq5rQ8gB2Yjg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>    int t = 0;&#xD;
+    int c = 0;&#xD;
+    int newC = tieCounter*2;&#xD;
+    int temp[newC];&#xD;
+    int split = 0;&#xD;
+    int checking = 0;&#xD;
+    int playersInTie_new[3];&#xD;
+    &#xD;
+    hasTrips = false;&#xD;
+    hasPair = false;&#xD;
+    hasDubs = true;&#xD;
+    int pt = 0;&#xD;
+&#xD;
+    for(int x=0; x &lt; tieCounter;x++)&#xD;
+    {&#xD;
+   	 //Access hands of players based on their ID from playersInTie array&#xD;
+   	 t = playersInTie[x];&#xD;
+   	 t = (t-1) * 7;&#xD;
+&#xD;
+    //Store double pair number, i.e. one number for each pair&#xD;
+	if(finalHands[t] == 1)&#xD;
+	{	&#xD;
+    		temp[c] = (finalHands[t+4] == 100) ? (finalHands[t+2]): (finalHands[t+4]); &#xD;
+		temp[c+1] = 14;&#xD;
+	}&#xD;
+	else{&#xD;
+		if(finalHands[t+4] == 100){&#xD;
+				temp[c] = finalHands[t]; &#xD;
+    			temp[c+1] = finalHands[t+2];&#xD;
+		}&#xD;
+		else{&#xD;
+			temp[c] = finalHands[t+2]; &#xD;
+    			temp[c+1] = finalHands[t+4];&#xD;
+		}&#xD;
+	}&#xD;
+&#xD;
+   	c = c+2;&#xD;
+    	log.log(&quot;[Dealer]  Player %d: %d %d %d&quot;,  playersInTie[x], finalHands[t], finalHands[t+2], finalHands[t+4]);&#xD;
+    }&#xD;
+&#xD;
+    //Call function to get the highest number&#xD;
+    higherNumber = getHighest(temp, newC);&#xD;
+    log.log(&quot;[Dealer] Higher pair is: %d&quot;, higherNumber);&#xD;
+	&#xD;
+    &#xD;
+    //To check higher lower pair out of the dubs&#xD;
+    for(int x=0; x&lt; newC; x++)&#xD;
+    {&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{	&#xD;
+			checking++;&#xD;
+			//Meaning higher pair on the flop out of the dubs &#xD;
+			&#xD;
+		}&#xD;
+    }&#xD;
+	&#xD;
+    if(checking > 1)&#xD;
+		{	&#xD;
+				log.log(&quot;[Dealer] Checking second highest pair...&quot;);&#xD;
+				//Replace highest number with zero to recalculate second highest number&#xD;
+				for(int j=1;j &lt; newC; j=j+2)&#xD;
+				{&#xD;
+					if(temp[j] == higherNumber)&#xD;
+					{&#xD;
+						temp[j] = 0;&#xD;
+					}&#xD;
+					else{&#xD;
+						temp[j] = 0;&#xD;
+						temp[j-1] = 0;&#xD;
+					}&#xD;
+				}&#xD;
+&#xD;
+				secondHighestNumber = getHighest(temp, newC);&#xD;
+				log.log(&quot;[Dealer] Second highest pair is: %d&quot;, secondHighestNumber);&#xD;
+				&#xD;
+				//Print winners&#xD;
+			for(int x=1; x &lt;= newC; x++){&#xD;
+		&#xD;
+			if(temp[x-1] == secondHighestNumber)&#xD;
+			{	&#xD;
+				//To check if number is odd or even and then chose player ID based on it.&#xD;
+				if(x % 2 == 0)&#xD;
+				{	&#xD;
+					split++;&#xD;
+					//If else for kicker case&#xD;
+					int y = x/2;&#xD;
+						playersInTie_new[pt] = playersInTie[y-1];&#xD;
+					pt++;&#xD;
+				}&#xD;
+				else{&#xD;
+					split++;&#xD;
+					int y = x+1;&#xD;
+					y = y/2;&#xD;
+					playersInTie_new[pt] = playersInTie[y-1];&#xD;
+					pt++;&#xD;
+				}&#xD;
+			}	&#xD;
+    &#xD;
+			}&#xD;
+				&#xD;
+		}&#xD;
+	else{&#xD;
+&#xD;
+		 //Print winners&#xD;
+		for(int x=1; x &lt;= newC; x++){&#xD;
+		&#xD;
+			if(temp[x-1] == higherNumber)&#xD;
+			{	&#xD;
+				//To check if number is odd or even and then chose player ID based on it.&#xD;
+				if(x % 2 == 0)&#xD;
+				{	&#xD;
+					split++;&#xD;
+					//If else for kicker case&#xD;
+					int y = x/2;&#xD;
+						playersInTie_new[pt] = playersInTie[y-1];&#xD;
+					pt++;&#xD;
+				}&#xD;
+				else{&#xD;
+					split++;&#xD;
+					int y = x+1;&#xD;
+					y = y/2;&#xD;
+					playersInTie_new[pt] = playersInTie[y-1];&#xD;
+					pt++;&#xD;
+				}&#xD;
+			}	&#xD;
+    &#xD;
+		}&#xD;
+	}&#xD;
+ &#xD;
+    //Split pot? Call function&#xD;
+    checkKicker(playersInTie_new, pt, split, higherNumber);</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_VCoSQDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_GvgK4DF4Eei8z5fxbyJ6nw" name="evalTrips" kind="external" source="_jBycIDF1Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_OpNTEDPeEeiiwfKaFCiAmg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>//Counter for finalHands Array&#xD;
+int t = 0;&#xD;
+&#xD;
+//Counter for temp array&#xD;
+int c = 0;&#xD;
+&#xD;
+int temp[tieCounter];&#xD;
+int playersInTie_new[3];&#xD;
+&#xD;
+//To count split pot scenario&#xD;
+int split=0;&#xD;
+&#xD;
+//New tieCounter based on players having exactly same pair&#xD;
+int pt=0;&#xD;
+&#xD;
+hasPair = false;&#xD;
+hasDubs = false;&#xD;
+hasTrips = true;&#xD;
+&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Store trips number and handle case for ACE&#xD;
+	temp[c] = (finalHands[t] == 1) ? 14 : (finalHands[t]); &#xD;
+	c++;&#xD;
+&#xD;
+	log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x], finalHands[t]);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher trips is: %d&quot;, higherNumber); &#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			split++;&#xD;
+			playersInTie_new[pt] = playersInTie[x];&#xD;
+			pt++;&#xD;
+		}&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to declare winner if sole high pair winner else same pair higher kicker winner&#xD;
+checkKicker(playersInTie_new, pt, split, higherNumber);&#xD;
+&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_WX1xsDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_JwzYsDF4Eei8z5fxbyJ6nw" name="Tie Eval Done" kind="external" source="_45uG0DF3Eei8z5fxbyJ6nw" target="_Z1UmMDFtEei8z5fxbyJ6nw"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_Lnf0kDF4Eei8z5fxbyJ6nw" name="evalSt." kind="external" source="_jjxu4DF1Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_dMNUUDSgEei4ueUBgF48Zg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int c = 0;&#xD;
+int temp[tieCounter];&#xD;
+&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];	&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Handle ace&#xD;
+	if(finalHands[t] == 1 &amp;&amp; finalHands[t+1] != 2){&#xD;
+		finalHands[t] = 14;	&#xD;
+		temp[c] = finalHands[t];&#xD;
+		&#xD;
+	}else{	&#xD;
+		//Store last card of straight&#xD;
+		temp[c] = (finalHands[t+6] == 100) ? ((finalHands[t+5] == 100) ? finalHands[t+4] : finalHands[t+5]) : (finalHands[t+6]);&#xD;
+	} &#xD;
+&#xD;
+	  &#xD;
+	  log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x], temp[c]);	&#xD;
+	  c++;&#xD;
+	}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher straight with: %d&quot;, higherNumber); &#xD;
+&#xD;
+int split = 0;&#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			split++;&#xD;
+			log.log(&quot;[Dealer] || Player %d wins the round with higher straight! ||&quot;, playersInTie[x]);&#xD;
+&#xD;
+		}&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Split pot?&#xD;
+if(split > 1)&#xD;
+  {&#xD;
+    log.log(&quot;[Dealer] SPLIT POT!&quot;);&#xD;
+  }&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_XNSzADF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_MjVKsDF4Eei8z5fxbyJ6nw" name="evalFlush" kind="external" source="_jQ4oEDF1Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Bdvv4D0JEeiznpwlLD5SuA" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int h = 0;&#xD;
+int c = 0;&#xD;
+int c1 = 0;&#xD;
+int temp[tieCounter];&#xD;
+int split = 0;&#xD;
+int counter = 0;&#xD;
+int topFlop=0;&#xD;
+&#xD;
+//Store tied players hands&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];&#xD;
+	&#xD;
+	//For hands array&#xD;
+	h = (t-1) * 2;&#xD;
+&#xD;
+	//For finalhands array&#xD;
+	t = (t-1) * 7;&#xD;
+	&#xD;
+	//Compare flop with hand array and replace with 100 if same&#xD;
+	for(int p = 0; p &lt; 5; p++)&#xD;
+	{&#xD;
+		for(int q = t; q &lt; (t+7); q++)&#xD;
+			{&#xD;
+				&#xD;
+				//compare hands with flop array for weeding out common flush cards&#xD;
+				flop[p] = ((flop[p] % 13) == 0) ? 13 : (flop[p] % 13);&#xD;
+				hands[h] = ((hands[h] % 13) == 0) ? 13 : (hands[h] % 13);  &#xD;
+				hands[h+1] = ((hands[h+1] % 13) == 0) ? 13 : (hands[h+1] % 13);  &#xD;
+				&#xD;
+				 if(finalHands[q] == flop[p])&#xD;
+					{	  &#xD;
+					        //log.log(&quot;replacing %d by 100&quot;, finalHands[q]);&#xD;
+						 finalHands[q] = 100;  &#xD;
+					}&#xD;
+			}&#xD;
+&#xD;
+	}&#xD;
+&#xD;
+&#xD;
+	for(int i=t;i&lt;t+7;i++)&#xD;
+	{&#xD;
+		finalHands[i] = (finalHands[i] == 1) ? 14 : finalHands[i]; &#xD;
+		if(finalHands[i] != 100)&#xD;
+		{&#xD;
+			temp[c] = (finalHands[i] == 1) ? 14 : finalHands[i];&#xD;
+			&#xD;
+			if(temp[c]==14){&#xD;
+			  i++;&#xD;
+			}&#xD;
+&#xD;
+			log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x], temp[c]);&#xD;
+			c1++;&#xD;
+		}&#xD;
+		else{&#xD;
+			counter++;&#xD;
+		}&#xD;
+	}&#xD;
+&#xD;
+	c++;&#xD;
+&#xD;
+	if(counter > 6){&#xD;
+		log.log(&quot;[Dealer] Top flop!&quot;);&#xD;
+		topFlop++;&#xD;
+	}&#xD;
+	&#xD;
+	counter = 0;&#xD;
+	&#xD;
+}&#xD;
+	&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+if(c1 > 0)&#xD;
+{&#xD;
+	higherNumber = getHighest(temp, c);&#xD;
+	log.log(&quot;[Dealer] Higher flush card is: %d&quot;, higherNumber); &#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			split++;&#xD;
+			log.log(&quot;[Dealer] Player %d wins the round with higher flush!&quot;, playersInTie[x]);&#xD;
+&#xD;
+		}&#xD;
+}&#xD;
+}&#xD;
+&#xD;
+if(topFlop == tieCounter)&#xD;
+{&#xD;
+	log.log(&quot;[Dealer] Flop flush, Split POT!&quot;);&#xD;
+}&#xD;
+else if(split>1)&#xD;
+{&#xD;
+	log.log(&quot;[Dealer] Split POT!&quot;);&#xD;
+}</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_YL2tADF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_Nn-ekDF4Eei8z5fxbyJ6nw" name="evalFull" kind="external" source="_xxYAkDF2Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_fvPEUDgaEei2xuFZpqfQdg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int tc = 0;&#xD;
+int pc = 0;&#xD;
+int trips[tieCounter];&#xD;
+int pair[tieCounter];&#xD;
+&#xD;
+//Store tied players hands&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];	&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Three ways the finalHandsArray can have full house combinations &#xD;
+	if(finalHands[t] == finalHands[t+1] &amp;&amp; finalHands[t+1] == finalHands[t+2]){&#xD;
+		trips[tc] = (finalHands[t] == 1) ? 14 : finalHands[t];&#xD;
+		pair[pc] = (finalHands[t+5] == 100) ? ((finalHands[t+3] == 1) ? 14 : finalHands[t+3]) : finalHands[t+5];&#xD;
+		log.log(&quot;[Dealer]  Player %d: %d %d&quot;, playersInTie[x], trips[tc], pair[tc]); &#xD;
+		tc++;&#xD;
+		pc++;&#xD;
+	}&#xD;
+	else if(finalHands[t] == finalHands[t+1] &amp;&amp; finalHands[t+2] == finalHands[t+3] &amp;&amp; finalHands[t+2] != finalHands[t+4]){&#xD;
+		pair[pc] = (finalHands[t+2] == 1) ? 14 : finalHands[t+2];&#xD;
+		trips[tc] = (finalHands[t+4] == 1) ? 14 : finalHands[t+4];&#xD;
+		log.log(&quot;[Dealer]  Player %d: %d %d&quot;, playersInTie[x], trips[tc], pair[tc]);&#xD;
+		tc++;&#xD;
+		pc++;&#xD;
+	}&#xD;
+	else{&#xD;
+		pair[pc] = (finalHands[t+5] == 100) ? ((finalHands[t] == 1) ? 14 : finalHands[t]) : finalHands[t+5];&#xD;
+		trips[tc] = (finalHands[t+2] == 1) ? 14 : finalHands[t+2];&#xD;
+		log.log(&quot;[Dealer]  Player %d: %d %d&quot;, playersInTie[x], trips[tc], pair[tc]);&#xD;
+		tc++;&#xD;
+		pc++;&#xD;
+	}&#xD;
+	&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+int higherTrips = getHighest(trips, tieCounter);&#xD;
+int higherPair = getHighest(pair, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher trips is: %d&quot;, higherTrips);&#xD;
+log.log(&quot;[Dealer] Higher pair is: %d&quot;, higherPair);&#xD;
+&#xD;
+int hasTrips = 0;&#xD;
+int hasPair = 0;&#xD;
+int tripsWinner = 0;&#xD;
+int pairWinner = 0;&#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(trips[x] == higherTrips)&#xD;
+		{		 &#xD;
+			hasTrips++;&#xD;
+			tripsWinner = playersInTie[x];&#xD;
+		}&#xD;
+		if(pair[x] == higherPair)&#xD;
+		{&#xD;
+			hasPair++;&#xD;
+			pairWinner = playersInTie[x];&#xD;
+		}&#xD;
+		&#xD;
+}&#xD;
+&#xD;
+if(hasTrips == 1)&#xD;
+{&#xD;
+	log.log(&quot;[Dealer] || Player %d wins the round with higher full house! ||&quot;, tripsWinner);&#xD;
+}&#xD;
+else if(hasTrips > 1 &amp;&amp; hasPair == 1){&#xD;
+	log.log(&quot;[Dealer] || Player %d wins the round with higher full house! ||&quot;, pairWinner);&#xD;
+}&#xD;
+else{&#xD;
+	log.log(&quot;[Dealer] || SPLIT POT! ||&quot;);&#xD;
+}&#xD;
+	&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_ZXG_MDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_Oh3T8DF4Eei8z5fxbyJ6nw" name="evalQuads" kind="external" source="_yIHsoDF2Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_xblMIDSqEei4ueUBgF48Zg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int c = 0;&#xD;
+int temp[tieCounter];&#xD;
+&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Store quads number and handle case for ACE&#xD;
+	if(finalHands[t] == finalHands[t+2]){&#xD;
+		&#xD;
+		temp[c] = (finalHands[t] == 1) ? 14 : finalHands[t];&#xD;
+		&#xD;
+	}&#xD;
+	else{&#xD;
+		temp[c] = finalHands[t+2];&#xD;
+	}&#xD;
+	&#xD;
+	c++;&#xD;
+	log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x], finalHands[t+2]);&#xD;
+}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher quads is: %d&quot;, higherNumber); &#xD;
+&#xD;
+int split = 0;&#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			split++;&#xD;
+			log.log(&quot;[Dealer] || Player %d wins the round with higher quads! ||&quot;, playersInTie[x]);&#xD;
+&#xD;
+		}&#xD;
+}&#xD;
+&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_aRY2IDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <transition xmi:type="uml:Transition" xmi:id="_PfEjEDF4Eei8z5fxbyJ6nw" name="evalSt.Flush" kind="external" source="_JgmO8DF3Eei8z5fxbyJ6nw" target="_45uG0DF3Eei8z5fxbyJ6nw">
+                    <effect xmi:type="uml:OpaqueBehavior" xmi:id="_h-lMkDghEei2xuFZpqfQdg" name="Effect" isReentrant="false">
+                      <language>C++</language>
+                      <body>int t = 0;&#xD;
+int c = 0;&#xD;
+int temp[tieCounter];&#xD;
+&#xD;
+for(int x=0; x &lt; tieCounter;x++)&#xD;
+{&#xD;
+	//Access hands of players based on their ID from playersInTie array&#xD;
+	t = playersInTie[x];&#xD;
+	t = (t-1) * 7;&#xD;
+  	&#xD;
+	//Handle ace&#xD;
+	if(finalHands[t] == 1 &amp;&amp; finalHands[t+1] != 2){&#xD;
+		finalHands[t] = 14;	&#xD;
+		temp[c] = finalHands[t];&#xD;
+		&#xD;
+	}else{	&#xD;
+		//Store last card of straight&#xD;
+		temp[c] = (finalHands[t+6] == 100) ? ((finalHands[t+5] == 100) ? finalHands[t+4] : finalHands[t+5]) : (finalHands[t+6]);&#xD;
+	} &#xD;
+&#xD;
+	  log.log(&quot;[Dealer]  Player %d: %d&quot;, playersInTie[x] ,temp[c]);	&#xD;
+	  c++;&#xD;
+	}&#xD;
+&#xD;
+&#xD;
+//Call function to get the highest number&#xD;
+higherNumber = getHighest(temp, tieCounter);&#xD;
+log.log(&quot;[Dealer] Higher straight flush with: %d&quot;, higherNumber); &#xD;
+&#xD;
+//Print winners&#xD;
+for(int x=0; x &lt; tieCounter; x++){&#xD;
+		if(temp[x] == higherNumber)&#xD;
+		{		 &#xD;
+			log.log(&quot;[Dealer] || Player %d wins the round with higher straight flush! ||&quot;, playersInTie[x]);&#xD;
+&#xD;
+		}&#xD;
+}&#xD;
+&#xD;
+</body>
+                    </effect>
+                    <trigger xmi:type="uml:Trigger" xmi:id="_b0IbQDF4Eei8z5fxbyJ6nw" event="_t1h48CHGEei3E_GTNZS2AQ" port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+                  </transition>
+                  <subvertex xmi:type="uml:State" xmi:id="_tTP-gDFtEei8z5fxbyJ6nw" name="Initial"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_7vStIDF0Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_-EY8QDF0Eei8z5fxbyJ6nw" name="Tie on HighCard"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_V0pFYDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_XTheMDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_XcyH4DF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_XqB5sDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_X4E8wDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_YHtUMDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_b2LKADF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_cDkFwDF1Eei8z5fxbyJ6nw" kind="choice"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_ivqKUDF1Eei8z5fxbyJ6nw" name="Tie on Pair"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_jBycIDF1Eei8z5fxbyJ6nw" name="Tie on Trips"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_jQ4oEDF1Eei8z5fxbyJ6nw" name="Tie on Flush"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_jjxu4DF1Eei8z5fxbyJ6nw" name="Tie on Straight"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_j4VCkDF1Eei8z5fxbyJ6nw" name="Tie on Dubs"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_xxYAkDF2Eei8z5fxbyJ6nw" name="Tie on Full"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_yIHsoDF2Eei8z5fxbyJ6nw" name="Tie on Quads"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_JgmO8DF3Eei8z5fxbyJ6nw" name="Tie on St. Flush"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_45uG0DF3Eei8z5fxbyJ6nw" kind="junction"/>
+                </region>
+              </subvertex>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_t_GUsDFpEei8z5fxbyJ6nw" kind="junction"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_oVTIsDFrEei8z5fxbyJ6nw" kind="choice"/>
+            </region>
+          </subvertex>
+        </region>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1I30QA39EeipktqbB3N69w" specification="_0B4XAA39EeipktqbB3N69w">
+        <language>C++</language>
+        <body>return (c - '0');&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xmIf8CHKEei3E_GTNZS2AQ" specification="_u-WlYCHKEei3E_GTNZS2AQ">
+        <language>C++</language>
+        <body>return (rand() % 52)+ 1;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_y3ur0CKoEeiLy4mxOkkZFA">
+        <language>C++</language>
+        <body></body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_5JWjwCY-EeiTsem0Hypb_A" specification="_buPJkCY-EeiTsem0Hypb_A">
+        <language>C++</language>
+        <body>//To check for used cards before dealing&#xD;
+while(checkIfUsed(r)) {&#xD;
+&#xD;
+	//log.log(&quot;Already used card %d&quot;, r);&#xD;
+   	r = random();&#xD;
+    	//log.log(&quot;New card %d&quot;, r);&#xD;
+}&#xD;
+&#xD;
+return r;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qK-TYCZTEeiTsem0Hypb_A" specification="_Y-4a0CZTEeiTsem0Hypb_A">
+        <language>C++</language>
+        <body>//Assign cards&#xD;
+&#xD;
+if(c == 1 || c == 14 || c == 27 || c == 40 ){&#xD;
+	return 'A';&#xD;
+}&#xD;
+else if(c == 2 || c == 15 || c == 28 || c == 41){&#xD;
+	return '2';&#xD;
+}&#xD;
+else if(c == 3 || c == 16 || c == 29 || c == 42){&#xD;
+	return '3';&#xD;
+}&#xD;
+else if(c == 4 || c == 17 || c == 30 || c == 43){&#xD;
+	return '4';&#xD;
+}&#xD;
+else if(c == 5 || c == 18 || c == 31 || c == 44){&#xD;
+	return '5';&#xD;
+}&#xD;
+else if(c == 6 || c == 19 || c == 32 || c == 45){&#xD;
+	return '6';&#xD;
+}&#xD;
+else if(c == 7 || c == 20 || c == 33 || c == 46){&#xD;
+	return '7';&#xD;
+}&#xD;
+else if(c == 8 || c == 21 || c == 34 || c == 47){&#xD;
+	return '8';&#xD;
+}&#xD;
+else if(c == 9 || c == 22 || c == 35 || c == 48){&#xD;
+	return '9';&#xD;
+}&#xD;
+else if(c == 10 || c == 23 || c == 36 || c == 49){&#xD;
+	return 'T';&#xD;
+}&#xD;
+else if(c == 11 || c == 24 || c == 37 || c == 50){&#xD;
+	return 'J';&#xD;
+}&#xD;
+else if(c == 12 || c == 25 || c == 38 || c == 51){&#xD;
+	return 'Q';&#xD;
+}&#xD;
+else if(c == 13 || c == 26 || c == 39 || c == 52){&#xD;
+	return 'K';&#xD;
+}&#xD;
+else{&#xD;
+	log.log(&quot;Error!!&quot;);&#xD;
+}&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ra97oCZTEeiTsem0Hypb_A" specification="_Y-96YCZTEeiTsem0Hypb_A">
+        <language>C++</language>
+        <body>//The ASCII codes for clubs, diamonds, hearts, spades are now '\5', '\4', '\3', '\6' respectively.&#xD;
+if(c > 0 &amp;&amp; c &lt;= 13){&#xD;
+	//spades&#xD;
+	return 's';&#xD;
+}&#xD;
+else if(c > 13 &amp;&amp; c &lt;= 26){&#xD;
+	//hearts&#xD;
+	return 'h';&#xD;
+}&#xD;
+else if(c > 26 &amp;&amp; c &lt;= 39){&#xD;
+	//diamonds&#xD;
+	return 'd';&#xD;
+}&#xD;
+else{&#xD;
+	//clubs&#xD;
+	return 'c';&#xD;
+}&#xD;
+&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CVQCUC-lEeirsMLhmd_FLQ" specification="_4TqooC-kEeirsMLhmd_FLQ">
+        <language>C++</language>
+        <body>for(int q=0; q&lt;=k; q++)&#xD;
+{&#xD;
+	if(r == used[q]) &#xD;
+	{	&#xD;
+		return true;&#xD;
+	}&#xD;
+&#xD;
+}&#xD;
+&#xD;
+return false;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p6PHIC-zEeirsMLhmd_FLQ">
+        <language>C++</language>
+        <body>for(int x=0;x&lt;size\o;x++)&#xD;
+{&#xD;
+	for(int y=x+1; y&lt;7; y++)&#xD;
+	{&#xD;
+		if((tempArr[x] % 13) == (tempArr[y] % 13))&#xD;
+		{&#xD;
+			//log.log(&quot;Player %d has a pair!&quot;, i);&#xD;
+			//Check hits&#xD;
+			scHit++;&#xD;
+		}&#xD;
+		&#xD;
+	}&#xD;
+	if(scHit == 1)&#xD;
+	{&#xD;
+		log.log(&quot;Player %d has a pair!&quot;, i);		&#xD;
+		//if hasPair = true then double pair = true else hasPair = true	&#xD;
+	}&#xD;
+	if(scHit == 2)&#xD;
+	{	&#xD;
+		log.log(&quot;Player %d has trips!&quot;, i);&#xD;
+		//hasTrips = true&#xD;
+	}&#xD;
+	if(scHit == 3)&#xD;
+	{	&#xD;
+		log.log(&quot;Player %d has FUCKING quads!&quot;, i);&#xD;
+		//hasTrips = true&#xD;
+	}	&#xD;
+	scHit = 0;	&#xD;
+}</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_voRHgC_gEeirsMLhmd_FLQ" specification="_mZ1egC_fEeirsMLhmd_FLQ">
+        <language>C++</language>
+        <body>    //bubble sort&#xD;
+    int n = 7;&#xD;
+    for(int x=0; x&lt;n-1; x++)&#xD;
+    {&#xD;
+    for(int y=0; y&lt;n-x-1; y++)&#xD;
+    {&#xD;
+    if (arr[y] > arr[y+1])&#xD;
+    {	&#xD;
+    //swap(&amp;tempArr[y], &amp;tempArr[y+1]);&#xD;
+    int temp = arr[y];&#xD;
+    arr[y] = arr[y+1];&#xD;
+    arr[y+1] = temp;&#xD;
+    }&#xD;
+    }&#xD;
+    }&#xD;
+&#xD;
+    return arr;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8U7b0C_qEeirsMLhmd_FLQ" specification="_ljLiUC_qEeirsMLhmd_FLQ">
+        <language>C++</language>
+        <body>    int prevElement = arr[0];&#xD;
+    for(int i = 1 ; i &lt;= 6 ; i++){&#xD;
+    if(arr[i] == prevElement)&#xD;
+    arr[i] = 100;&#xD;
+    else&#xD;
+    prevElement = arr[i];	&#xD;
+    }&#xD;
+    return arr; &#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_t_4rEC_5EeirsMLhmd_FLQ" specification="_bpmQQC_5EeirsMLhmd_FLQ">
+        <language>C++</language>
+        <body>for(int i = 0 ; i &lt; counter; i++){&#xD;
+    arr[i] = -1;&#xD;
+}&#xD;
+&#xD;
+return arr;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_2dcn0DCqEeiFE-XFaysu8w" specification="_cVGl8DCqEeiFE-XFaysu8w">
+        <language>C++</language>
+        <body>    int diff = -1;&#xD;
+    int straightCount = 0;&#xD;
+    int index = 0;&#xD;
+    while(index &lt; 6 &amp;&amp; straightCount &lt; 4){&#xD;
+    diff = arr[index+1] - arr[index];&#xD;
+    index += 1;&#xD;
+    if(diff == 1)&#xD;
+    straightCount += 1;	&#xD;
+    else&#xD;
+    straightCount = 0;	&#xD;
+    }&#xD;
+    if(checkIfNutStraight(arr))&#xD;
+    {&#xD;
+    for(int i = 0 ; i &lt; 7 ; i++){&#xD;
+    if(arr[i] != 1 &amp;&amp; arr[i] != 10 &amp;&amp; arr[i] != 11 &amp;&amp; arr[i] != 12 &amp;&amp; arr[i] != 13 )&#xD;
+    arr[i] = 100;&#xD;
+    }&#xD;
+    sort(arr);&#xD;
+    return true;&#xD;
+    }&#xD;
+    if(straightCount >= 4)&#xD;
+    {	&#xD;
+    int tmpCounter =0;&#xD;
+    for(int index = 0 ; index &lt; 6 ; index++){&#xD;
+    if((arr[index+1] - arr[index] > 1) &amp;&amp; arr[index+1] != 100 &amp;&amp; tmpCounter &lt; 4){&#xD;
+    arr[index] = 100;&#xD;
+    /*** Modified Code *****/&#xD;
+    //Resets temp counter to 0 as straight is broken&#xD;
+    //and sets all cards before to 100&#xD;
+    if(tmpCounter >  0){&#xD;
+    for(tmpCounter; tmpCounter > 0; tmpCounter--){&#xD;
+    arr[index-tmpCounter] =100;&#xD;
+    }&#xD;
+    }&#xD;
+    /***** Modified code ends ****/&#xD;
+    tmpCounter = 0;&#xD;
+    }&#xD;
+    else if(((arr[index+1] - arr[index] > 1) &amp;&amp; arr[index+1] != 100 &amp;&amp; tmpCounter >= 4) || (tmpCounter >= 4 &amp;&amp; arr[index] == 100)){&#xD;
+    arr[index+1] = 100;&#xD;
+    }&#xD;
+    else if(arr[index+1] - arr[index] == 1){&#xD;
+    tmpCounter++;&#xD;
+    }&#xD;
+    }&#xD;
+    sort(arr);&#xD;
+    return true;&#xD;
+    }&#xD;
+    return false;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_lRUoIDCsEeiFE-XFaysu8w" specification="_8QfIADCrEeiFE-XFaysu8w">
+        <language>C++</language>
+        <body>bool isPresent = false;&#xD;
+&#xD;
+for(int index =0 ; index &lt; 7 ; index++){&#xD;
+    if(arr[index] == cardToCheck){&#xD;
+    	isPresent = true;&#xD;
+    	break;&#xD;
+    }&#xD;
+}&#xD;
+&#xD;
+return isPresent;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_sC5s0DCwEeiFE-XFaysu8w" specification="_x2IFIDCvEeiFE-XFaysu8w">
+        <language>C++</language>
+        <body>//Check if Ace present for NUT STRAIGHT&#xD;
+if(checkIfCardInArray(arr,1) &amp;&amp; checkIfCardInArray(arr,10) &amp;&amp; checkIfCardInArray(arr,11) &amp;&amp; checkIfCardInArray(arr,12) &amp;&amp; checkIfCardInArray(arr,13))&#xD;
+{&#xD;
+    return true;&#xD;
+}&#xD;
+&#xD;
+return false;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_9M3ZcDDnEeiFE-XFaysu8w" specification="_kgzIUDDnEeiFE-XFaysu8w">
+        <language>C++</language>
+        <body>    //Player 1 cards in 1-52 range&#xD;
+    hands[0] = 1;&#xD;
+    hands[1] = 52;&#xD;
+&#xD;
+    //Player 2 cards &#xD;
+    hands[2] = 32;&#xD;
+    hands[3] = 13;&#xD;
+&#xD;
+    //Player 3 cards &#xD;
+    hands[4] = 11;&#xD;
+    hands[5] = 15;&#xD;
+&#xD;
+    //Player 4 cards &#xD;
+    hands[6] = 29;&#xD;
+    hands[7] = 45;&#xD;
+&#xD;
+    //Player 5 cards &#xD;
+    hands[8] = 26;&#xD;
+    hands[9] = 37;&#xD;
+&#xD;
+    //Player 6 cards &#xD;
+    hands[10] = 5;&#xD;
+    hands[11] = 29;&#xD;
+&#xD;
+    //Flop cards &#xD;
+    flop[0] = 8; //flop[0] = 14;&#xD;
+    flop[1] = 21; //flop[1] = 17;&#xD;
+    flop[2] = 10; //flop[2] = 18;&#xD;
+    flop[3] = 23; //flop[3] = 23;&#xD;
+    flop[4] = 4; //flop[4] = 24;&#xD;
+    log.log(&quot;Manually set new Cards are : &quot;);&#xD;
+    &#xD;
+    for(int index = 0 ; index &lt; 12; index = index+2){&#xD;
+    &#xD;
+	char a= hands[index];&#xD;
+	char b= hands[index+1];&#xD;
+	char a1 = defineCard(a);&#xD;
+	char a2 = defineSuit(a);&#xD;
+	char b1 = defineCard(b);&#xD;
+	char b2 = defineSuit(b);&#xD;
+&#xD;
+       log.log(&quot;%c %c, %c %c &quot;, a1, a2, b1, b2);&#xD;
+    }&#xD;
+&#xD;
+    log.log(&quot;Manually set new flop is: &quot;);&#xD;
+    &#xD;
+    for(int index = 0 ; index &lt; 5; index++)&#xD;
+    {&#xD;
+      char a = defineCard(flop[index]);&#xD;
+      char b = defineSuit(flop[index]);&#xD;
+      log.log(&quot;%c %c&quot;,a,b);&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fmEIgDOsEeiTEJDnoTt3WA" specification="_ae8dsDOsEeiTEJDnoTt3WA">
+        <language>C++</language>
+        <body>    //To get the highest number&#xD;
+    int x = 0;&#xD;
+    //Find highest number&#xD;
+    for(int i=0; i &lt; counter;i++)&#xD;
+    {&#xD;
+    if(arr[i] > x &amp;&amp; arr[i] &lt; 15)&#xD;
+    {	&#xD;
+    x = arr[i];	&#xD;
+    }&#xD;
+    }&#xD;
+    return x;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fBaRkDPTEeiiwfKaFCiAmg">
+        <language>C++</language>
+        <body></body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_5mg_AD02EeiAMMRolm79TQ" specification="_wCJFwD02EeiAMMRolm79TQ">
+        <language>C++</language>
+        <body>int split_new = 0;&#xD;
+int flag = 0;&#xD;
+int temp1[tieCounter];&#xD;
+int tempC = 0;&#xD;
+int b = 0;&#xD;
+&#xD;
+//Case: If one player only has the highest pair&#xD;
+if(split == 1)&#xD;
+{	&#xD;
+	//Higher pair winner&#xD;
+	if(hasPair){&#xD;
+		log.log(&quot;[Dealer] || Player %d wins the round with higher pair! ||&quot;, playersInTie_new[0]);&#xD;
+	}else if(hasTrips){&#xD;
+		log.log(&quot;[Dealer] || Player %d wins the round with higher trips! ||&quot;, playersInTie_new[0]);	&#xD;
+	}&#xD;
+	else if(hasDubs)&#xD;
+		{&#xD;
+		log.log(&quot;[Dealer] || Player %d wins the round with higher dubs! ||&quot;, playersInTie_new[0]);&#xD;
+	}&#xD;
+	&#xD;
+}&#xD;
+//else for same highest pair but kicker case&#xD;
+else if(split > 1)&#xD;
+{				&#xD;
+				if(hasPair){&#xD;
+					log.log(&quot;[Dealer] Same Pair, check kicker?&quot;);&#xD;
+				}else if(hasTrips){&#xD;
+					log.log(&quot;[Dealer] Same Trips, check kicker?&quot;);	&#xD;
+				}else if(hasDubs)&#xD;
+				{&#xD;
+					log.log(&quot;[Dealer] Same Dubs, check kicker?&quot;);&#xD;
+				}&#xD;
+				&#xD;
+&#xD;
+				for(int x=0; x &lt; pt; x++)&#xD;
+				{&#xD;
+					//To get players who have same highest pair&#xD;
+						int a = playersInTie_new[x]; &#xD;
+						a = a*2;&#xD;
+						&#xD;
+						hands[a-1] = hands[a-1] % 13;&#xD;
+						hands[a-2] = hands[a-2] % 13;&#xD;
+						int c1= (hands[a-1] == 0) ? 13 : ((hands[a-1] == 1) ? 14 : hands[a-1]);&#xD;
+						int c2= (hands[a-2] == 0) ? 13 : ((hands[a-2] == 1) ? 14 : hands[a-2]);&#xD;
+						&#xD;
+						//Check kicker and store in temp&#xD;
+						if(c1 == higherNumber)&#xD;
+						{&#xD;
+							temp1[tempC] = c2;&#xD;
+							&#xD;
+						}else if(c2 == higherNumber){&#xD;
+							temp1[tempC] = c1;&#xD;
+						}	&#xD;
+						else{&#xD;
+							if(c1 >= c2){&#xD;
+								temp1[tempC] = c1;&#xD;
+							}&#xD;
+							else{&#xD;
+								temp1[tempC] = c2;&#xD;
+							}&#xD;
+						}&#xD;
+						tempC++;&#xD;
+				}	&#xD;
+				&#xD;
+				tieCounter = split;	&#xD;
+					&#xD;
+				//Get highest kicker&#xD;
+				int hkicker = getHighest(temp1, tieCounter);&#xD;
+				//log.log(&quot;[Dealer] Higher kicker is %d&quot;, hkicker);&#xD;
+				&#xD;
+				&#xD;
+				//Check which player has highest kicker&#xD;
+				for(int x=0; x &lt; pt; x++)&#xD;
+				{&#xD;
+&#xD;
+					if(temp1[x] == hkicker)&#xD;
+						{&#xD;
+							split_new++;&#xD;
+							b = playersInTie_new[x];&#xD;
+							&#xD;
+							//Further check if kicker is greater than one of the flop cards&#xD;
+							for(int fl=0; fl&lt;5;fl++)&#xD;
+							{&#xD;
+								//Mod to convert to 1-13&#xD;
+								flop[fl] = flop[fl] % 13;&#xD;
+								flop[fl] = (flop[fl] == 0) ? 13 : ((flop[fl] == 1) ? 14 : flop[fl]);&#xD;
+								if(flop[fl] != higherNumber)&#xD;
+								{&#xD;
+								    if(flop[fl] != secondHighestNumber)&#xD;
+									{&#xD;
+									   if(temp1[x] &lt; flop[fl])&#xD;
+									   {&#xD;
+										//log.log(&quot;kicker %d &lt; flop card %d&quot;, temp1[x], flop[fl]);&#xD;
+										flag++;&#xD;
+									   }&#xD;
+									}&#xD;
+								}&#xD;
+							}&#xD;
+				&#xD;
+						}&#xD;
+				&#xD;
+				}&#xD;
+				&#xD;
+				//Print winner&#xD;
+				//Check common kicker or not?&#xD;
+				if(hasPair)&#xD;
+					{&#xD;
+						if(flag >= 3 || split_new > 1)&#xD;
+						{&#xD;
+							log.log(&quot;[Dealer] || Split POT! ||&quot;);&#xD;
+						}	&#xD;
+						else{&#xD;
+							log.log(&quot;[Dealer] || Player %d wins the round with kicker! ||&quot;, b);&#xD;
+						}&#xD;
+						&#xD;
+					}&#xD;
+				else if(hasTrips)&#xD;
+					{&#xD;
+						if(flag >= 2 || split_new > 1)&#xD;
+						{&#xD;
+							log.log(&quot;[Dealer] || Split POT! ||&quot;);&#xD;
+						}	&#xD;
+						else{&#xD;
+							log.log(&quot;[Dealer] || Player %d wins the round with kicker! ||&quot;, b);&#xD;
+						}&#xD;
+						&#xD;
+					}&#xD;
+&#xD;
+				else if(hasDubs){&#xD;
+						if(flag >= 1 || split_new > 1)&#xD;
+						{&#xD;
+							log.log(&quot;[Dealer] || Split POT! ||&quot;);&#xD;
+						}	&#xD;
+						else{&#xD;
+							log.log(&quot;[Dealer] || Player %d wins the round with kicker! ||&quot;, b);&#xD;
+						}&#xD;
+						&#xD;
+					}&#xD;
+&#xD;
+}</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0B4XAA39EeipktqbB3N69w" name="toDigit" concurrency="guarded" method="_1I30QA39EeipktqbB3N69w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mEYHgDIyEeiBYMGMRx41sg">
+          <body>Converts char to int</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_6JDJkA39EeipktqbB3N69w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9khx8A39EeipktqbB3N69w" name="c">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_u-WlYCHKEei3E_GTNZS2AQ" name="random" concurrency="guarded" method="_xmIf8CHKEei3E_GTNZS2AQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_oJs1QDIyEeiBYMGMRx41sg">
+          <body>Random function to generate deck</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BkVCACHLEei3E_GTNZS2AQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_buPJkCY-EeiTsem0Hypb_A" name="deal" visibility="package" concurrency="guarded" method="_5JWjwCY-EeiTsem0Hypb_A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vfc60DIyEeiBYMGMRx41sg">
+          <body>Deal function to check duplicates before generating and dealing cards</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_kvZoECY-EeiTsem0Hypb_A" name="r">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_DAhdMCY_EeiTsem0Hypb_A" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Y-4a0CZTEeiTsem0Hypb_A" name="defineCard" concurrency="guarded" method="_qK-TYCZTEeiTsem0Hypb_A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1OYzkDIyEeiBYMGMRx41sg">
+          <body>Function to convert int to char for displaying the card to the user </body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y-4a0SZTEeiTsem0Hypb_A" name="c">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y-4a0iZTEeiTsem0Hypb_A" name="card" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y-4a0yZTEeiTsem0Hypb_A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-4a1CZTEeiTsem0Hypb_A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Y-96YCZTEeiTsem0Hypb_A" name="defineSuit" concurrency="guarded" method="_ra97oCZTEeiTsem0Hypb_A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2idqkDIyEeiBYMGMRx41sg">
+          <body>Function to convert int to char for displaying the suit to the user </body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y-96YSZTEeiTsem0Hypb_A" name="c">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y-96YiZTEeiTsem0Hypb_A" name="suit" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4TqooC-kEeirsMLhmd_FLQ" name="checkIfUsed" concurrency="guarded" method="_CVQCUC-lEeirsMLhmd_FLQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7PidsDIyEeiBYMGMRx41sg">
+          <body>Function to check if a card is already dealt/used&#xD;
+</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9V_6EC-kEeirsMLhmd_FLQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZnHmUC-lEeirsMLhmd_FLQ" name="r">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mZ1egC_fEeirsMLhmd_FLQ" name="sort" visibility="public" concurrency="guarded" method="_voRHgC_gEeirsMLhmd_FLQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__C_hMDIyEeiBYMGMRx41sg">
+          <body>Function to sort the hand in ascending order (for straight, straight flush etc.)</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rMANAC_fEeirsMLhmd_FLQ" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_whu7kC_fEeirsMLhmd_FLQ" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wiWmoC_fEeirsMLhmd_FLQ" value="7"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8VhvIDCiEeiFE-XFaysu8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SsoUADCjEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_StHcMDCjEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ljLiUC_qEeirsMLhmd_FLQ" name="getUnique" visibility="public" concurrency="guarded" method="_8U7b0C_qEeirsMLhmd_FLQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_BoHwYDIzEeiBYMGMRx41sg">
+          <body>Function to return only unique cards</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="__MZ40DCmEeiFE-XFaysu8w" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__vk3UDCmEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__wmLADCmEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BWqw8DCnEeiFE-XFaysu8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BzWF4DCnEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B0DQgDCnEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bpmQQC_5EeirsMLhmd_FLQ" name="clearArray" concurrency="guarded" method="_t_4rEC_5EeirsMLhmd_FLQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Z2IpMD6MEeimEsN7A7xrjA">
+          <body>Function to clear arrays&#xD;
+</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_fb9HkC_5EeirsMLhmd_FLQ" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jtAtEC_5EeirsMLhmd_FLQ" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jt9IQC_5EeirsMLhmd_FLQ" value="5"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hsnioC_5EeirsMLhmd_FLQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kWg9EC_5EeirsMLhmd_FLQ" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kXP84C_5EeirsMLhmd_FLQ" value="5"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_95NdkD6GEeimEsN7A7xrjA" name="counter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cVGl8DCqEeiFE-XFaysu8w" name="checkStraight" concurrency="guarded" method="_2dcn0DCqEeiFE-XFaysu8w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_D4HdEDIzEeiBYMGMRx41sg" annotatedElement="_cVGl8DCqEeiFE-XFaysu8w">
+          <body>Function to check straight</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cBS5MD6MEeimEsN7A7xrjA">
+          <body>Function to check straight &#xD;
+</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_keRFcDCqEeiFE-XFaysu8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_q-kwwDCqEeiFE-XFaysu8w" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rvScADCqEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rv8jUDCqEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8QfIADCrEeiFE-XFaysu8w" name="checkIfCardInArray" concurrency="guarded" method="_lRUoIDCsEeiFE-XFaysu8w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_HBrPADIzEeiBYMGMRx41sg">
+          <body>Function to check if a card is present in the array&#xD;
+</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_EVanwDCsEeiFE-XFaysu8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Mn1J4DCsEeiFE-XFaysu8w" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NSkwADCsEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NTQFcDCsEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Q1668DCsEeiFE-XFaysu8w" name="cardToCheck">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_x2IFIDCvEeiFE-XFaysu8w" name="checkIfNutStraight" concurrency="guarded" method="_sC5s0DCwEeiFE-XFaysu8w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JB9EsDIzEeiBYMGMRx41sg">
+          <body>Function to check higher straight for royal flush</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3RED0DCvEeiFE-XFaysu8w" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3wyFsDCvEeiFE-XFaysu8w" value="7"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3xaX0DCvEeiFE-XFaysu8w" value="7"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_72wckDCvEeiFE-XFaysu8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kgzIUDDnEeiFE-XFaysu8w" name="setUpRoundManually" concurrency="guarded" method="_9M3ZcDDnEeiFE-XFaysu8w">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OLlQ8DIzEeiBYMGMRx41sg">
+          <body>Function to set up a round manually (to test rare hands i.e. royal or straight flush) </body>
+        </ownedComment>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ae8dsDOsEeiTEJDnoTt3WA" name="getHighest" visibility="public" concurrency="guarded" method="_fmEIgDOsEeiTEJDnoTt3WA">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lWo38D6MEeimEsN7A7xrjA">
+          <body>Function to get the highest number in the array</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yMyMADOsEeiTEJDnoTt3WA" name="arr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3F0xADPMEeiiwfKaFCiAmg" value="12"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3GjJwDPMEeiiwfKaFCiAmg" value="12"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_038KsDOsEeiTEJDnoTt3WA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mlkqwDPMEeiiwfKaFCiAmg" name="counter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_wCJFwD02EeiAMMRolm79TQ" name="checkKicker" concurrency="guarded" method="_5mg_AD02EeiAMMRolm79TQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_jWTX4D6MEeimEsN7A7xrjA">
+          <body>Function to check - single winner in a tie or winner in kicker case or split pot </body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_qtgI0D3lEeiNEIWwOFzDiw" name="playersInTie_new">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r6HF4D3lEeiNEIWwOFzDiw" value="3"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r8fEcD3lEeiNEIWwOFzDiw" value="3"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PduvYD3mEeiNEIWwOFzDiw" name="pt">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_vS2jUD3lEeiNEIWwOFzDiw" name="split">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_2V_O4D3lEeiNEIWwOFzDiw" name="higherNumber">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SDZBwAxcEei6DK0lfblWDw" name="Player" classifierBehavior="_BiAdoAxdEei6DK0lfblWDw" isActive="true">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_vK904AxcEei6DK0lfblWDw" name="playPort" visibility="public" type="_TXgVAAxcEei6DK0lfblWDw" isOrdered="true" aggregation="composite" isBehavior="true"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_w5Rw0AxcEei6DK0lfblWDw" name="log" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6kIb0IeXEeSVyrlWP4nYew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fgit8AxdEei6DK0lfblWDw" name="player" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bIyOwD6KEeimEsN7A7xrjA">
+          <body>Used in SM to store player number for logging</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FfjsACHMEei3E_GTNZS2AQ" name="card1" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_WzvhID6KEeimEsN7A7xrjA">
+          <body>Used in SM to store 1st card (i.e. denomination and suit)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PBeCUCIoEeiIvvUAw0J7lw" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PBnzUCIoEeiIvvUAw0J7lw" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JgwQkCHMEei3E_GTNZS2AQ" name="card2" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_VoRzkD6KEeimEsN7A7xrjA">
+          <body>Used in SM to store 2nd card (i.e. denomination and suit)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiiUcCIoEeiIvvUAw0J7lw" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JjR7UCIoEeiIvvUAw0J7lw" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8NQVYCInEeiIvvUAw0J7lw" name="i" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_RiS1oD6KEeimEsN7A7xrjA">
+          <body>Used in SM to store 1st card</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5khNsDIvEeiBYMGMRx41sg" name="j" visibility="protected">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_QJlWQD6KEeimEsN7A7xrjA">
+          <body>Used in SM to store 2nd card</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_BiAdoAxdEei6DK0lfblWDw" name="StateMachine" isReentrant="false">
+        <region xmi:type="uml:Region" xmi:id="_BiTYkAxdEei6DK0lfblWDw" name="Region">
+          <transition xmi:type="uml:Transition" xmi:id="_BidJkwxdEei6DK0lfblWDw" name="Initial" source="_BiTYkQxdEei6DK0lfblWDw" target="_BidJkQxdEei6DK0lfblWDw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Pl3Z8AxdEei6DK0lfblWDw" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>log.log(&quot;[Player] ready&quot;);&#xD;
+&#xD;
+</body>
+            </effect>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_WgBIoAxdEei6DK0lfblWDw" name="Receiving Card 1" source="_BidJkQxdEei6DK0lfblWDw" target="_yCuf4CHLEei3E_GTNZS2AQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_c_kmAAxdEei6DK0lfblWDw" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>//Store  first dealt card&#xD;
+i = cards;&#xD;
+&#xD;
+&#xD;
+//Call operation to define card and suit for display&#xD;
+card1[0] = defineCard(i);&#xD;
+card1[1] = defineSuit(i);&#xD;
+&#xD;
+//Send ack that cards are received&#xD;
+playPort.ack(i).send();</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_Mi00oA6rEeiH45zQ4B3Bcg" event="_pe9pQA6qEeiH45zQ4B3Bcg" port="_vK904AxcEei6DK0lfblWDw"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_4QAhgCHLEei3E_GTNZS2AQ" name="Receiving Card 2" kind="external" source="_yCuf4CHLEei3E_GTNZS2AQ" target="_BidJkQxdEei6DK0lfblWDw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_EtJXoCHMEei3E_GTNZS2AQ" name="Effect" isReentrant="false">
+              <language>C++</language>
+              <body>//Receive cards&#xD;
+j = cards;&#xD;
+player = p;&#xD;
+&#xD;
+&#xD;
+//Call operation to define card and suit for display&#xD;
+card2[0] = defineCard(j);&#xD;
+card2[1] = defineSuit(j);&#xD;
+&#xD;
+//Send ack that cards are received and log&#xD;
+log.log(&quot;[Player %d] My Cards are %c %c, %c %c&quot;, player, card1[0], card1[1], card2[0], card2[1]);&#xD;
+playPort.ack(j).send();</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_5SstkCHLEei3E_GTNZS2AQ" event="_pe9pQA6qEeiH45zQ4B3Bcg" port="_vK904AxcEei6DK0lfblWDw"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_BiTYkQxdEei6DK0lfblWDw"/>
+          <subvertex xmi:type="uml:State" xmi:id="_BidJkQxdEei6DK0lfblWDw" name="Ready"/>
+          <subvertex xmi:type="uml:State" xmi:id="_yCuf4CHLEei3E_GTNZS2AQ" name="Got Card 1"/>
+        </region>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Cu6jUA0mEeiXh6kFwUffUg">
+        <language>C++</language>
+        <body>    &#xD;
+    return (rand() % 3);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_GtiaECIkEeiIvvUAw0J7lw" specification="_7_BB4CIjEeiIvvUAw0J7lw">
+        <language>C++</language>
+        <body>//Assign cards&#xD;
+&#xD;
+&#xD;
+if(c == 1 || c == 14 || c == 27 || c == 40 ){&#xD;
+	return 'A';&#xD;
+}&#xD;
+else if(c == 2 || c == 15 || c == 28 || c == 41){&#xD;
+	return '2';&#xD;
+}&#xD;
+else if(c == 3 || c == 16 || c == 29 || c == 42){&#xD;
+	return '3';&#xD;
+}&#xD;
+else if(c == 4 || c == 17 || c == 30 || c == 43){&#xD;
+	return '4';&#xD;
+}&#xD;
+else if(c == 5 || c == 18 || c == 31 || c == 44){&#xD;
+	return '5';&#xD;
+}&#xD;
+else if(c == 6 || c == 19 || c == 32 || c == 45){&#xD;
+	return '6';&#xD;
+}&#xD;
+else if(c == 7 || c == 20 || c == 33 || c == 46){&#xD;
+	return '7';&#xD;
+}&#xD;
+else if(c == 8 || c == 21 || c == 34 || c == 47){&#xD;
+	return '8';&#xD;
+}&#xD;
+else if(c == 9 || c == 22 || c == 35 || c == 48){&#xD;
+	return '9';&#xD;
+}&#xD;
+else if(c == 10 || c == 23 || c == 36 || c == 49){&#xD;
+	return 'T';&#xD;
+}&#xD;
+else if(c == 11 || c == 24 || c == 37 || c == 50){&#xD;
+	return 'J';&#xD;
+}&#xD;
+else if(c == 12 || c == 25 || c == 38 || c == 51){&#xD;
+	return 'Q';&#xD;
+}&#xD;
+else if(c == 13 || c == 26 || c == 39 || c == 52){&#xD;
+	return 'K';&#xD;
+}&#xD;
+else{&#xD;
+	log.log(&quot;card is %d&quot;, c);&#xD;
+	log.log(&quot;Error!!&quot;);&#xD;
+}&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_GYm2cCIlEeiIvvUAw0J7lw" specification="_sciWACIkEeiIvvUAw0J7lw">
+        <language>C++</language>
+        <body>//The ASCII codes for clubs, diamonds, hearts, spades are now '\5', '\4', '\3', '\6' respectively.&#xD;
+if(c > 0 &amp;&amp; c &lt;= 13){&#xD;
+	//spades&#xD;
+	return 's';&#xD;
+}&#xD;
+else if(c > 13 &amp;&amp; c &lt;= 26){&#xD;
+	//hearts&#xD;
+	return 'h';&#xD;
+}&#xD;
+else if(c > 26 &amp;&amp; c &lt;= 39){&#xD;
+	//diamonds&#xD;
+	return 'd';&#xD;
+}&#xD;
+else{&#xD;
+	//clubs&#xD;
+	return 'c';&#xD;
+}&#xD;
+&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7_BB4CIjEeiIvvUAw0J7lw" name="defineCard" concurrency="guarded" method="_GtiaECIkEeiIvvUAw0J7lw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_gcPFYD6KEeimEsN7A7xrjA">
+          <body>Takes raw input from deck (1-52) and converts to respective card denominations (i.e. J,Q,A etc.)</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_AFlOoCIkEeiIvvUAw0J7lw" name="c">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_lXXqICIkEeiIvvUAw0J7lw" name="card" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V_3pUCKgEeiLy4mxOkkZFA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WAxBMCKgEeiLy4mxOkkZFA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_sciWACIkEeiIvvUAw0J7lw" name="defineSuit" concurrency="guarded" method="_GYm2cCIlEeiIvvUAw0J7lw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_i5LB4D6KEeimEsN7A7xrjA">
+          <body>Takes raw input from deck (1-52) and converts to respective card suits (i.e. clubs, diamonds etc.)</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_u3EewCIkEeiIvvUAw0J7lw" name="c">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3-n5ICIkEeiIvvUAw0J7lw" name="suit" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_TXqGAAxcEei6DK0lfblWDw" name="Play">
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_TXgVAAxcEei6DK0lfblWDw" name="Play">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TXzP8QxcEei6DK0lfblWDw" client="_TXgVAAxcEei6DK0lfblWDw" supplier="_TXqGAgxcEei6DK0lfblWDw" contract="_TXqGAgxcEei6DK0lfblWDw"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TYGx8QxcEei6DK0lfblWDw" client="_TXgVAAxcEei6DK0lfblWDw" supplier="_TX9A9AxcEei6DK0lfblWDw" contract="_TX9A9AxcEei6DK0lfblWDw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TXqGAgxcEei6DK0lfblWDw" name="Play">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_peZokA6qEeiH45zQ4B3Bcg" name="deal" concurrency="guarded">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_sKXOgD6MEeimEsN7A7xrjA">
+            <body>To send cards over play port to different players&#xD;
+</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VzcmsCHLEei3E_GTNZS2AQ" name="cards">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Orh9kDGJEei8z5fxbyJ6nw" name="p">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TX9A8AxcEei6DK0lfblWDw" name="Play~">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mTcvgA6qEeiH45zQ4B3Bcg" name="ack">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_p-w5oD6MEeimEsN7A7xrjA">
+            <body>To send ack after receiving cards</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bPX0AC-ZEeirsMLhmd_FLQ" name="c">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_TX9A8gxcEei6DK0lfblWDw" client="_TXgVAAxcEei6DK0lfblWDw" supplier="_TX9A8AxcEei6DK0lfblWDw"/>
+      <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_TX9A8wxcEei6DK0lfblWDw" name="*"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TX9A9AxcEei6DK0lfblWDw" name="PlayIO"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_TYGx8gxcEei6DK0lfblWDw" client="_TXgVAAxcEei6DK0lfblWDw" supplier="_TX9A9AxcEei6DK0lfblWDw"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_mT5bcA6qEeiH45zQ4B3Bcg" operation="_mTcvgA6qEeiH45zQ4B3Bcg"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_pe9pQA6qEeiH45zQ4B3Bcg" operation="_peZokA6qEeiH45zQ4B3Bcg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cIG68A38EeipktqbB3N69w" name="Input">
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_cHwVoA38EeipktqbB3N69w" name="Input">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cINooA38EeipktqbB3N69w" client="_cHwVoA38EeipktqbB3N69w" supplier="_cIKlUA38EeipktqbB3N69w" contract="_cIKlUA38EeipktqbB3N69w"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_cIYAsA38EeipktqbB3N69w" client="_cHwVoA38EeipktqbB3N69w" supplier="_cIVkcQ38EeipktqbB3N69w" contract="_cIVkcQ38EeipktqbB3N69w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_cIKlUA38EeipktqbB3N69w" name="Input">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_e__HAA38EeipktqbB3N69w" name="inp">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_wJQtAD6MEeimEsN7A7xrjA">
+            <body>Takes number of rounds as input from Top and passes to Dealer capsule</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mJVvUA38EeipktqbB3N69w" name="rounds">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_nhCFUDDKEeiFE-XFaysu8w" name="twoDigitRounds">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_cIShIA38EeipktqbB3N69w" name="Input~"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_cIU9YA38EeipktqbB3N69w" client="_cHwVoA38EeipktqbB3N69w" supplier="_cIShIA38EeipktqbB3N69w"/>
+      <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_cIVkcA38EeipktqbB3N69w" name="*"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_cIVkcQ38EeipktqbB3N69w" name="InputIO"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_cIYnwA38EeipktqbB3N69w" client="_cHwVoA38EeipktqbB3N69w" supplier="_cIVkcQ38EeipktqbB3N69w"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_fAdoIA38EeipktqbB3N69w" operation="_e__HAA38EeipktqbB3N69w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NGQmYCHGEei3E_GTNZS2AQ" name="Tick">
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_NFysUCHGEei3E_GTNZS2AQ" name="Tick">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NGcMkCHGEei3E_GTNZS2AQ" client="_NFysUCHGEei3E_GTNZS2AQ" supplier="_NGX7ICHGEei3E_GTNZS2AQ" contract="_NGX7ICHGEei3E_GTNZS2AQ"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NG9J8CHGEei3E_GTNZS2AQ" client="_NFysUCHGEei3E_GTNZS2AQ" supplier="_NG4RcCHGEei3E_GTNZS2AQ" contract="_NG4RcCHGEei3E_GTNZS2AQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_NGX7ICHGEei3E_GTNZS2AQ" name="Tick"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_NGwVoCHGEei3E_GTNZS2AQ" name="Tick~">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_t1IQUCHGEei3E_GTNZS2AQ" name="tick">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yhOC4D6MEeimEsN7A7xrjA">
+            <body>Message to self communicate&#xD;
+</body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_NG11MCHGEei3E_GTNZS2AQ" client="_NFysUCHGEei3E_GTNZS2AQ" supplier="_NGwVoCHGEei3E_GTNZS2AQ"/>
+      <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_NG3qYCHGEei3E_GTNZS2AQ" name="*"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_NG4RcCHGEei3E_GTNZS2AQ" name="TickIO"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_NG-_ICHGEei3E_GTNZS2AQ" client="_NFysUCHGEei3E_GTNZS2AQ" supplier="_NG4RcCHGEei3E_GTNZS2AQ"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_t1h48CHGEei3E_GTNZS2AQ" operation="_t1IQUCHGEei3E_GTNZS2AQ"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MSZT1QxcEei6DK0lfblWDw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MSZT1gxcEei6DK0lfblWDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MSZT1wxcEei6DK0lfblWDw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MSZT2AxcEei6DK0lfblWDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_MSZT2QxcEei6DK0lfblWDw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MSZT2gxcEei6DK0lfblWDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/cppproperties#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_vl5LALs8EeSTjNEQkASznQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dd-PQDFqEei8z5fxbyJ6nw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_deZtEDFqEei8z5fxbyJ6nw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLRealTime:Capsule xmi:id="_OciP0AxcEei6DK0lfblWDw" base_Class="_OXKnoAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:Capsule xmi:id="_PteTTAxcEei6DK0lfblWDw" base_Class="_PtUiQAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:Capsule xmi:id="_SDiyxAxcEei6DK0lfblWDw" base_Class="_SDZBwAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_TXqGAQxcEei6DK0lfblWDw" base_Package="_TXqGAAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_TXzP8AxcEei6DK0lfblWDw" base_Interface="_TXqGAgxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_TX9A8QxcEei6DK0lfblWDw" base_Interface="_TX9A8AxcEei6DK0lfblWDw" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_TYGx8AxcEei6DK0lfblWDw" base_Interface="_TX9A9AxcEei6DK0lfblWDw" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_TYP74AxcEei6DK0lfblWDw" base_Collaboration="_TXgVAAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTPort xmi:id="_vLG-0AxcEei6DK0lfblWDw" base_Port="_vK904AxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTPort xmi:id="_w5bh0AxcEei6DK0lfblWDw" isWired="false" base_Port="_w5Rw0AxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTPort xmi:id="_yDVwMAxcEei6DK0lfblWDw" base_Port="_yDMmQAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:RTPort xmi:id="_0EUwgAxcEei6DK0lfblWDw" isWired="false" base_Port="_0EK_gAxcEei6DK0lfblWDw"/>
+  <UMLRealTime:CapsulePart xmi:id="_4v688QxcEei6DK0lfblWDw" base_Property="_4v688AxcEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_BidJkAxdEei6DK0lfblWDw" base_Pseudostate="_BiTYkQxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTState xmi:id="_BidJkgxdEei6DK0lfblWDw" base_State="_BidJkQxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_BidJlAxdEei6DK0lfblWDw" base_Region="_BiTYkAxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_BimTkAxdEei6DK0lfblWDw" base_StateMachine="_BiAdoAxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_DBcQEQxdEei6DK0lfblWDw" base_Pseudostate="_DBcQEAxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTState xmi:id="_DBcQEwxdEei6DK0lfblWDw" base_State="_DBcQEgxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_DBlaAQxdEei6DK0lfblWDw" base_Region="_DBSfEAxdEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_DBlaEgxdEei6DK0lfblWDw" base_StateMachine="_DBJVIAxdEei6DK0lfblWDw"/>
+  <UMLRealTime:CapsulePart xmi:id="_EZLlYA0pEeiXh6kFwUffUg" base_Property="_EZGs4A0pEeiXh6kFwUffUg"/>
+  <UMLRealTime:CapsulePart xmi:id="_gDl28A0pEeiXh6kFwUffUg" base_Property="_gDizoA0pEeiXh6kFwUffUg"/>
+  <UMLRealTime:RTConnector xmi:id="_i6o8kQ0pEeiXh6kFwUffUg" base_Connector="_i6lSMA0pEeiXh6kFwUffUg"/>
+  <UMLRealTime:RTConnector xmi:id="_jlqPgA0pEeiXh6kFwUffUg" base_Connector="_jlnMMA0pEeiXh6kFwUffUg"/>
+  <UMLRealTime:RTPort xmi:id="_ybOOMA0sEeiF6L0MmCDtCA" isWired="false" base_Port="_ybIuoA0sEeiF6L0MmCDtCA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_Du58gA0tEeiF6L0MmCDtCA" base_Region="_Duz14A0tEeiF6L0MmCDtCA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_DvImAA0tEeiF6L0MmCDtCA" base_Pseudostate="_DvAqMA0tEeiF6L0MmCDtCA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_Dvbg8A0tEeiF6L0MmCDtCA" base_Pseudostate="_DvWBYA0tEeiF6L0MmCDtCA"/>
+  <UMLRTStateMachines:RTState xmi:id="_PxbTMA0tEeiF6L0MmCDtCA" base_State="_PxXo0A0tEeiF6L0MmCDtCA"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_3jtw8A37EeipktqbB3N69w" headerPreface="#include &quot;umlrtmain.hh&quot;" base_Class="_OXKnoAxcEei6DK0lfblWDw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_DRGlIA38EeipktqbB3N69w" base_Pseudostate="_DREv8A38EeipktqbB3N69w"/>
+  <UMLRTStateMachines:RTState xmi:id="_DUvH8A38EeipktqbB3N69w" base_State="_DUtSwA38EeipktqbB3N69w"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_DUwWEA38EeipktqbB3N69w" base_Region="_DRBsoA38EeipktqbB3N69w"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_DU448A38EeipktqbB3N69w" base_StateMachine="_DQGfkA38EeipktqbB3N69w"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_cIJXMA38EeipktqbB3N69w" base_Package="_cIG68A38EeipktqbB3N69w"/>
+  <UMLRealTime:RTMessageSet xmi:id="_cINBkA38EeipktqbB3N69w" base_Interface="_cIKlUA38EeipktqbB3N69w"/>
+  <UMLRealTime:RTMessageSet xmi:id="_cITvQA38EeipktqbB3N69w" base_Interface="_cIShIA38EeipktqbB3N69w" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_cIXZoA38EeipktqbB3N69w" base_Interface="_cIVkcQ38EeipktqbB3N69w" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_cIZO0A38EeipktqbB3N69w" base_Collaboration="_cHwVoA38EeipktqbB3N69w"/>
+  <UMLRealTime:RTPort xmi:id="_CvsEsA39EeipktqbB3N69w" isWired="false" base_Port="_CvQm4A39EeipktqbB3N69w"/>
+  <UMLRealTime:RTPort xmi:id="_bbQxIA3-EeipktqbB3N69w" base_Port="_bbOU4A3-EeipktqbB3N69w"/>
+  <UMLRealTime:RTPort xmi:id="_dWOpAA3-EeipktqbB3N69w" base_Port="_dWLlsA3-EeipktqbB3N69w"/>
+  <UMLRealTime:RTConnector xmi:id="_kodggA3-EeipktqbB3N69w" base_Connector="_koIJUA3-EeipktqbB3N69w"/>
+  <UMLRTStateMachines:RTState xmi:id="_TbZzIA-1EeiSz5Qu9q9yoQ" base_State="_TbXW4A-1EeiSz5Qu9q9yoQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_83m0YB9-EeicQOsei9m8zw" base_State="_83Q2IB9-EeicQOsei9m8zw"/>
+  <UMLRTStateMachines:RTState xmi:id="_d8ULcB9_EeicQOsei9m8zw" base_State="_d8RIIB9_EeicQOsei9m8zw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_THmPMB-AEeicQOsei9m8zw" base_Pseudostate="_TGxIwB-AEeicQOsei9m8zw"/>
+  <UMLRTStateMachines:RTState xmi:id="_JOHcsCGxEei3E_GTNZS2AQ" base_State="_JNsl8CGxEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_ICBnkCGyEei3E_GTNZS2AQ" base_Pseudostate="_IB654CGyEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_XtQxYCGyEei3E_GTNZS2AQ" base_State="_XtL44CGyEei3E_GTNZS2AQ"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_NGU30CHGEei3E_GTNZS2AQ" base_Package="_NGQmYCHGEei3E_GTNZS2AQ"/>
+  <UMLRealTime:RTMessageSet xmi:id="_NGaXYCHGEei3E_GTNZS2AQ" base_Interface="_NGX7ICHGEei3E_GTNZS2AQ"/>
+  <UMLRealTime:RTMessageSet xmi:id="_NG0AACHGEei3E_GTNZS2AQ" base_Interface="_NGwVoCHGEei3E_GTNZS2AQ" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_NG7UwCHGEei3E_GTNZS2AQ" base_Interface="_NG4RcCHGEei3E_GTNZS2AQ" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_NHANQCHGEei3E_GTNZS2AQ" base_Collaboration="_NFysUCHGEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_yCw8ICHLEei3E_GTNZS2AQ" base_State="_yCuf4CHLEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_uK5dQCHMEei3E_GTNZS2AQ" base_State="_uK0kwCHMEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_36g9MCHMEei3E_GTNZS2AQ" base_State="_36dS0CHMEei3E_GTNZS2AQ"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_gOIsMCI0EeiIvvUAw0J7lw" base_Region="_gNyG4CI0EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_gPXbQCI0EeiIvvUAw0J7lw" base_Pseudostate="_gPIKsCI0EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_gPv1wCI0EeiIvvUAw0J7lw" base_Pseudostate="_gPq9QCI0EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTState xmi:id="_j05-kCI0EeiIvvUAw0J7lw" base_State="_j01GECI0EeiIvvUAw0J7lw"/>
+  <UMLRealTime:RTPort xmi:id="_qeiIgCI1EeiIvvUAw0J7lw" isPublish="false" isWired="true" base_Port="_qeba0CI1EeiIvvUAw0J7lw"/>
+  <UMLRealTime:RTPort xmi:id="_xjL3ACI1EeiIvvUAw0J7lw" isPublish="false" isWired="true" base_Port="_xjFwYCI1EeiIvvUAw0J7lw"/>
+  <UMLRealTime:RTConnector xmi:id="_ZEWUICI2EeiIvvUAw0J7lw" base_Connector="_ZERboCI2EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_LwYDACI-EeiIvvUAw0J7lw" base_Region="_LwU_sCI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_LwfXwCI-EeiIvvUAw0J7lw" base_Pseudostate="_LwafQCI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_LwmsgCI-EeiIvvUAw0J7lw" base_Pseudostate="_LwkQQCI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_OPHWUCI-EeiIvvUAw0J7lw" base_Pseudostate="_OPCd0CI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTState xmi:id="_OkHV8CI-EeiIvvUAw0J7lw" base_State="_OkE5sCI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTState xmi:id="_O1vRcCI-EeiIvvUAw0J7lw" base_State="_O1sOICI-EeiIvvUAw0J7lw"/>
+  <UMLRTStateMachines:RTState xmi:id="_q4IBUCJCEeiIvvUAw0J7lw" base_State="_q4E-ACJCEeiIvvUAw0J7lw"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_bGhBwCKaEeiLy4mxOkkZFA" headerPreface="#include &lt;stdlib.h>&#xD;&#xA;#include &lt;iterator>&#xD;&#xA;" base_Class="_PtUiQAxcEei6DK0lfblWDw" publicDeclarations="//Declaring pointers at capsule level&#xD;&#xA;//Used for flush logic&#xD;&#xA;int * pTempArr; &#xD;&#xA;//To store final hands of all players&#xD;&#xA;int * finalHands;&#xD;&#xA;//Used for deciding highest rank&#xD;&#xA;int* highest;&#xD;&#xA;&#xD;&#xA;"/>
+  <UMLRealTime:CapsulePart xmi:id="_yEKO8CKqEeiLy4mxOkkZFA" base_Property="_yD2s8CKqEeiLy4mxOkkZFA"/>
+  <UMLRealTime:RTConnector xmi:id="_1VVEwCKqEeiLy4mxOkkZFA" base_Connector="_1VI3gCKqEeiLy4mxOkkZFA"/>
+  <UMLRealTime:CapsulePart xmi:id="_Hbl5ICYlEeipDpFco6CMHg" base_Property="_HZp_cCYlEeipDpFco6CMHg"/>
+  <UMLRealTime:CapsulePart xmi:id="_J9OIYCYlEeipDpFco6CMHg" base_Property="_J87NcCYlEeipDpFco6CMHg"/>
+  <UMLRealTime:RTConnector xmi:id="_ZRpUsiYlEeipDpFco6CMHg" base_Connector="_ZRgKwCYlEeipDpFco6CMHg"/>
+  <UMLRealTime:RTConnector xmi:id="_aCYOEyYlEeipDpFco6CMHg" base_Connector="_aCYOECYlEeipDpFco6CMHg"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_L5kIMCZEEeiTsem0Hypb_A" base_Pseudostate="_L5G1MCZEEeiTsem0Hypb_A"/>
+  <UMLRTStateMachines:RTState xmi:id="_4DX8gCsHEeiEg8_Y4fANmQ" base_State="_4C9FwCsHEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_6ZYxoCsHEeiEg8_Y4fANmQ" base_Region="_6ZOZkCsHEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_7gVyoCsHEeiEg8_Y4fANmQ" base_Pseudostate="_7gPsACsHEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_8JXhgCsHEeiEg8_Y4fANmQ" base_Pseudostate="_8JRa4CsHEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_HKwLUCsIEeiEg8_Y4fANmQ" base_State="_HKsg8CsIEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_gRJnACsTEeiEg8_Y4fANmQ" base_State="_gRFVkCsTEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_PnTDYCsUEeiEg8_Y4fANmQ" base_Pseudostate="_PnPZACsUEeiEg8_Y4fANmQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_uyhSoC_dEeirsMLhmd_FLQ" base_State="_uydBMC_dEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_pr21oC_vEeirsMLhmd_FLQ" base_Region="_prpaQC_vEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_psGGMC_vEeirsMLhmd_FLQ" base_Pseudostate="_psBNsC_vEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_psXzAC_vEeirsMLhmd_FLQ" base_Pseudostate="_psSTcC_vEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_qHV3wC_vEeirsMLhmd_FLQ" base_State="_qHUCkC_vEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_0vxHoC_yEeirsMLhmd_FLQ" base_State="_0vuEUC_yEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_53mkIC_yEeirsMLhmd_FLQ" base_Region="_53kH4C_yEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_53sqwC_yEeirsMLhmd_FLQ" base_Pseudostate="_53pncC_yEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_GXM4YC_zEeirsMLhmd_FLQ" base_Pseudostate="_GXH_4C_zEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_OznrEC_zEeirsMLhmd_FLQ" base_State="_OzlO0C_zEeirsMLhmd_FLQ"/>
+  <UMLRTStateMachines:RTState xmi:id="_5Q_tUDCFEeiNWsPkvMOOIw" base_State="_5Q8qADCFEeiNWsPkvMOOIw"/>
+  <UMLRTStateMachines:RTState xmi:id="_FOx80DFpEei8z5fxbyJ6nw" base_State="_E_AbcDFpEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_eD7RcDFpEei8z5fxbyJ6nw" base_State="_eD1K0DFpEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_eR1KkDFpEei8z5fxbyJ6nw" base_State="_eRvD8DFpEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_t_MbUDFpEei8z5fxbyJ6nw" base_Pseudostate="_t_GUsDFpEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_oVZPUDFrEei8z5fxbyJ6nw" base_Pseudostate="_oVTIsDFrEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_Z0rtADFtEei8z5fxbyJ6nw" base_Region="_Z0mNcDFtEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_Z1Hx4DFtEei8z5fxbyJ6nw" base_Pseudostate="_Z1C5YDFtEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_Z1jPsDFtEei8z5fxbyJ6nw" base_Pseudostate="_Z1UmMDFtEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_tTTo4DFtEei8z5fxbyJ6nw" base_State="_tTP-gDFtEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="___0rADFwEei8z5fxbyJ6nw" base_Pseudostate="___vLcDFwEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_A7heQDFxEei8z5fxbyJ6nw" base_Pseudostate="_A7clwDFxEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_BP5LwDFxEei8z5fxbyJ6nw" base_Pseudostate="_BP2IcDFxEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_ewSHgDFxEei8z5fxbyJ6nw" base_Pseudostate="_ewNPADFxEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_hJgzQDFyEei8z5fxbyJ6nw" base_Pseudostate="_hJdI4DFyEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_hgkoYDFyEei8z5fxbyJ6nw" base_Pseudostate="_hgfv4DFyEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_h8E4oDFyEei8z5fxbyJ6nw" base_Pseudostate="_h8B1UDFyEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_iKrVUDFyEei8z5fxbyJ6nw" base_Pseudostate="_iKmc0DFyEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_tAfoUDFyEei8z5fxbyJ6nw" base_Pseudostate="_tAclADFyEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_CThroDF0Eei8z5fxbyJ6nw" base_Pseudostate="_CTczIDF0Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_7vWXgDF0Eei8z5fxbyJ6nw" base_Pseudostate="_7vStIDF0Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_-EcmoDF0Eei8z5fxbyJ6nw" base_State="_-EY8QDF0Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_V0svwDF1Eei8z5fxbyJ6nw" base_Pseudostate="_V0pFYDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_XTnk0DF1Eei8z5fxbyJ6nw" base_Pseudostate="_XTheMDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_Xc3ncDF1Eei8z5fxbyJ6nw" base_Pseudostate="_XcyH4DF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_XqFkEDF1Eei8z5fxbyJ6nw" base_Pseudostate="_XqB5sDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_X4LDYzF1Eei8z5fxbyJ6nw" base_Pseudostate="_X4E8wDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_YHxloDF1Eei8z5fxbyJ6nw" base_Pseudostate="_YHtUMDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_b2PbcDF1Eei8z5fxbyJ6nw" base_Pseudostate="_b2LKADF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_cDo-QDF1Eei8z5fxbyJ6nw" base_Pseudostate="_cDkFwDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_ivsmkDF1Eei8z5fxbyJ6nw" base_State="_ivqKUDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_jB04YDF1Eei8z5fxbyJ6nw" base_State="_jBycIDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_jQ7rYDF1Eei8z5fxbyJ6nw" base_State="_jQ4oEDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_jj0yMDF1Eei8z5fxbyJ6nw" base_State="_jjxu4DF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_j4Ys8DF1Eei8z5fxbyJ6nw" base_State="_j4VCkDF1Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_xxac0DF2Eei8z5fxbyJ6nw" base_State="_xxYAkDF2Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_yIKv8DF2Eei8z5fxbyJ6nw" base_State="_yIHsoDF2Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTState xmi:id="_JgorMDF3Eei8z5fxbyJ6nw" base_State="_JgmO8DF3Eei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_45y_UDF3Eei8z5fxbyJ6nw" base_Pseudostate="_45uG0DF3Eei8z5fxbyJ6nw"/>
+  <UMLRealTime:CapsulePart xmi:id="__Z04oDGJEei8z5fxbyJ6nw" base_Property="__ZYzwDGJEei8z5fxbyJ6nw"/>
+  <UMLRealTime:RTConnector xmi:id="_PASQITGKEei8z5fxbyJ6nw" base_Connector="_O_6csDGKEei8z5fxbyJ6nw"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_1LtFkDz_EeiznpwlLD5SuA" base_Pseudostate="_1KiA4Dz_EeiznpwlLD5SuA"/>
+</xmi:XMI>

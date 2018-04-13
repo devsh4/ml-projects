@@ -1,0 +1,16 @@
+Top.RTConnector1
+    Top.d1#playPort.far[0] <-> Top.p1#playPort.far[0]
+Top.RTConnector2
+    Top.d1#playPort.far[1] <-> Top.p2#playPort.far[0]
+Top.RTConnector3
+    Top#input.far[0] <-> Top.d1#input.far[0]
+Top.RTConnector4
+    Top.d1#playPort.far[2] <-> Top.p3#playPort.far[0]
+Top.RTConnector5
+    Top.d1#playPort.far[3] <-> Top.p4#playPort.far[0]
+Top.RTConnector6
+    Top.d1#playPort.far[4] <-> Top.p5#playPort.far[0]
+Top.RTConnector7
+    Top.d1#playPort.far[5] <-> Top.p6#playPort.far[0]
+Top.d1.RTConnector1
+    Top.d1#tickOut.far[0] <-> Top.d1#tickIn.far[0]
