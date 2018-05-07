@@ -88,7 +88,6 @@ def build_model(layers):
     model.add(LSTM(input_shape=(layers[1], layers[0]), output_dim=layers[1], return_sequences=True))
     model.add(Dropout(0.5))
     
-    #Second LSTM layer (Hidden layer)
     model.add(LSTM(layers[2], return_sequences=False))
     model.add(Dropout(0.5))
     
@@ -101,8 +100,12 @@ def build_model(layers):
     #usually a good choice for RNN's and works for batch training
     start = time.time()
 
-    rmsprop = keras.optimizers.RMSprop(lr=0.001, rho=0.9, decay=0.0) 
-    model.compile(loss="mse", optimizer=rmsprop)
+    rmsprop = keras.optimizers.RMSprop(lr=0.001, rho=0.9, decay=0.05)
+    model.compile(loss="mse", optimizer= rmsprop)
+    
+    #for daily preds
+    model.compile(loss="mse", optimizer='adam')
+    
     print("> Compilation Time : ", time.time() - start)
     return model
 
@@ -123,13 +126,15 @@ def predict_sequences_multiple(model, data, window_size, prediction_len):
     for i in range(int(len(data)/prediction_len)):
         #initial window frame
         curr_frame = data[i*prediction_len]
-        predicted = []
+        #print(i,">>>>")
+        #print(curr_frame)
+        predicted = []  
 
         for j in range(prediction_len):
             predicted.append(model.predict(curr_frame[newaxis,:,:])[0,0])
-            #slicing from 1 to end of array
+            #dropping first test data element and appending prediction to the end
             curr_frame = curr_frame[1:]
-            #inserts last value in predicted in curr_frame with window_size as index 
+            #inserts last value from predicted in curr_frame with window_size as index 
             curr_frame = np.insert(curr_frame, [window_size-1], predicted[-1], axis=0)
         prediction_seqs.append(predicted)
 

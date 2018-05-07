@@ -1,4 +1,5 @@
 import lstm1
+import daccuracy
 import time
 import numpy as np
 import matplotlib.pyplot as plt
@@ -56,20 +57,21 @@ def plot_results(predicted_data, true_data):
     ax.yaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
     ax.plot(true_data, label='True Data', color = 'blue')
     plt.plot(predicted_data, label='Prediction', color = 'green')
+    #plt.xlim(0,505)
     plt.legend()
     plt.show()
-
+ 
 
 def plot_results_multiple(predicted_data, true_data, prediction_len):
     fig = plt.figure(facecolor='white', figsize=(10,10))
     ax = fig.add_subplot(111)
     ax.plot(true_data, label='True Data', color = 'blue')
-
     #Pad the list of predictions to shift it in the graph to it's correct start
     for i, data in enumerate(predicted_data):
         padding = [None for p in range(i * prediction_len)]
         plt.plot(padding + data, label='Prediction', color = 'magenta')
-        #plt.legend()
+       
+    plt.xlim(0,150)
     plt.show()
     
 
@@ -95,37 +97,42 @@ if __name__=='__main__':
     
     #declare global variables
     start_time = time.time()
-    epochs  = 20
+    epochs  = 50
     window_size = 50
-    prediction_length = 7
-    
-    seed = 777
+    prediction_length = 5
+
+    seed = 7
     np.random.seed(seed)
     
     #higher the number, higher the space required
-    #batch = 50
-    batch = 200
+    batch = 256
     
     #Training and testing data
-    X_train, y_train, X_test, y_test, actual = lstm1.get_data('bse_train.csv', window_size, True)
-    #X_train, y_train, X_test, y_test = lstm.get_data('techm.csv', window_size, True)    
+    X_train, y_train, X_test, y_test, actual = lstm1.get_data('bse_data.csv', window_size, True)
+    #X_train, y_train, X_test, y_test, actual = lstm1.get_data('techm.csv', window_size, True)    
     
     #print('>>> Data processed...')
     
     #Build model with 2 hidden layers with 50 and 100 lstm cells respectively.
+    #model = lstm1.build_model([1, window_size, 100, 200, 1])
+    
+    #for daily predictions
     model = lstm1.build_model([1, window_size, 200, 1])
-   
+    
     #if val loss isnt decreasing, early callback to stop training
-    early_stopping = EarlyStopping(monitor='val_loss', patience = 2)
-
+    early_stopping = EarlyStopping(monitor='val_loss', patience = 3)
+    
     #Fit model with batch size and epochs
-    history = model.fit(X_train, y_train, batch_size=batch, nb_epoch=epochs, validation_split=0.05, callbacks=[early_stopping]) 
+    history = model.fit(X_train, y_train, batch_size=batch, nb_epoch=epochs, validation_split=0.1, callbacks=[early_stopping]) 
  
     #Metrics which are stored for each epoch
     #print(history.history.keys())
 
-    #summarize history 
-    plt.plot(history.history['loss'], color= 'blue')    
+    #summarize history
+    fig = plt.figure(facecolor='white', figsize=(8,8))
+    ax = fig.add_subplot(111)
+    #ax.yaxis.set_major_locator(ticker.MultipleLocator(spacing))
+    ax.plot(history.history['loss'], color= 'blue')    
     plt.plot(history.history['val_loss'], color = 'red')
     plt.title('model train vs validation loss')
     plt.ylabel('loss')
@@ -135,7 +142,7 @@ if __name__=='__main__':
     
     #Call predict function with window size and prediction length
     predictions = lstm1.predict_sequences_multiple(model, X_test, window_size, prediction_length)
-    
+  
     #Call point by point predict method
     y_pred = lstm1.predict_point_by_point(model, X_test)    
 
@@ -143,16 +150,14 @@ if __name__=='__main__':
     
     #Plot multiple preds
     plot_results_multiple(predictions, y_test, prediction_length)
-    
-    #print("Predictions:", predictions)
-   
-    #Get Performance Stats
-    #perf_stats(predictions, y_test)
-    
+    #plot_results_multiple(predictions1, y_test, prediction_length1)
     #************************
+    
     #Plot daily preds
-    plot_results(y_pred, y_test)
+    #plot_results(y_pred, y_test)
     
     #Get Performance Stats
     perf_stats(y_pred, y_test)
     
+    #Get directional accuracy of n days ahead prediction
+    daccuracy.calc_directional_accuracy(y_test, predictions, prediction_length)
